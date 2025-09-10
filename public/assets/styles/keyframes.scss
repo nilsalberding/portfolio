@@ -1,0 +1,12 @@
+
+
+
+@keyframes change-col {
+    0%{background: orange};
+    100%{background: purple};
+}
+
+@keyframes change-pos {
+    0%{justify-content: flex-start;};
+    100%{justify-content: flex-end;};
+}
