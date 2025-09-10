@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #89BCD9;
+    height: clamp(80px, 10dvh, 170px);
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+        font-family: 'Josefin Sans';
+        
+
+        nav {
+            a {
+                margin: 0 24px;
+                color: #262E34;
+                font-size: clamp(24px, 2dvh, 38px);
+                font-weight: 500;
+                transition: 200ms;
+
+                &:hover {
+                    color: #F8F5EC;
+                }
+            }
+        }
+        button{
+            margin: 4px;
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            color: #262E34;
+            transition: 200ms;
+
+            &:hover{
+                color: #F8F5EC;
+            }
+
+        }
+    }
+
+}
