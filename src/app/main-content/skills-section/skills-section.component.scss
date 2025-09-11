@@ -1,0 +1,68 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background-color: all.$col-dark;
+
+    .content {
+        @include all.fl();
+
+
+        >div {
+            @include all.fl($flexdir: row);
+            gap: 64px;
+        }
+
+        .skills-icons {
+            @include all.fl($flexdir: row);
+            gap: 32px;
+            width: 400px;
+            flex-wrap: wrap;
+
+            // .icon {
+            //     @include all.fl($jc: flex-start);
+            //     gap: 16px;
+            //     width: 70px;
+
+            //     span {
+            //         color: all.$col-blue;
+            //         text-align: center;
+            //     }
+            // }
+        }
+
+        .skills-learning {
+            @include all.fl();
+            gap: 24px;
+            width: 400px;
+            height: 400px;
+            background-image: url(../../../../public/assets/img/reference1.png);
+            background-size: contain;
+
+            p {
+                width: 250px;
+                text-align: center;
+                line-height: 1.3;
+            }
+            >div{
+                @include all.fl($flexdir: row);
+                .icon{
+                    gap: 8px;
+                    span{
+                        color: all.$col-white;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            @include all.fl($jc: flex-start);
+            gap: 16px;
+            width: 70px;
+
+            span {
+                color: all.$col-blue;
+                text-align: center;
+            }
+        }
+    }
+}

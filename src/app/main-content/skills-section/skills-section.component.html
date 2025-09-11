@@ -1,0 +1,29 @@
+<section>
+    <div class="content">
+        <h1>{{ 'skills.headline'|translate}}</h1>
+        <div>
+            <div class="skills-icons">
+                @for (item of icons; track $index; let index = $index) {
+                <div class="icon">
+                    <img src="{{icons[index].path}}" alt="">
+                    <span>{{icons[index].lable}}</span>
+                </div>
+                }
+            </div>
+            <div class="skills-learning">
+                <p>{{'skills.learningTop'|translate}}</p>
+                <div>
+                    <div class="icon">
+                        <img src="assets/icons/React.png" alt="">
+                        <span>React</span>
+                    </div>
+                    <div class="icon">
+                        <img src="assets/icons/VueJs.png" alt="">
+                        <span>Vue.js</span>
+                    </div>
+                </div>
+                <p>{{'skills.learningBottom'|translate}}</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -10,5 +10,11 @@
         "located": "located in Rostock..|",
         "text": "For me, code is like a toolbox - I love turning ideas into something tangible, piece by piece. What excites me most is combining design and functionality to create interfaces that feel light and enjoyable. With tools like React and Tailwind, I quickly find creative solutions, always aiming to build modern and intuitive user experiences.",
         "talk": "Let´s talk"
+    },
+    "skills": {
+        "headline": "My Skills",
+        "learningTop": "I am currently learning",
+        "learningBottom": "I am always eager to learn and continuously improve my skills to keep up with the latest technologies and trends."
     }
+
 }
