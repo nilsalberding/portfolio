@@ -1,0 +1,10 @@
+{
+    "header": {
+        "whyMe": "Why Me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "test": {
+        "test": "entest"
+    }
+}
