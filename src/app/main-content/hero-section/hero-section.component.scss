@@ -7,32 +7,111 @@ section {
     .content {
         height: 100%;
         @include all.fl($flexdir: row, $jc: space-between, $alit: flex-end);
-        .hero-img{
+
+        .hero-img {
             background-image: url(../../../../public/assets/img/bg_shape1.png);
             background-size: cover;
             transition: 200ms;
             display: flex;
-            &:hover{
+
+            &:hover {
                 background-image: url(../../../../public/assets/img/bg_shape2.png);
             }
-            img{
+
+            img {
                 height: 100%;
             }
         }
-        .hero-content{
+
+        .hero-content {
             height: 100%;
+            width: 50%;
             @include all.fl($jc: space-between);
-            .hero-socials{
-                @include all.fl($flexdir: row, $jc:space-between);
-                .hero-mail{
-                    height: 16px;
-                    width: 16px;
-                    background-image: url(../../../../public/assets/icons/mail1.png);
+            padding-bottom: 60px;
+
+            .hero-socials {
+                width: 100%;
+                @include all.fl($flexdir: row, $jc: space-between);
+
+                .hero-icons {
+                    @include all.fl();
+                    gap: 16px;
+
+                    a {
+                        display: inline-block;
+                        height: 30px;
+                        width: 30px;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .hero-mail {
+                        background-image: url(../../../../public/assets/icons/mail1.png);
+
+                        &:hover {
+                            background-image: url(../../../../public/assets/icons/mail2.png);
+                        }
+                    }
+
+                    .hero-github {
+                        background-image: url(../../../../public/assets/icons/github1.png);
+
+                        &:hover {
+                            background-image: url(../../../../public/assets/icons/github2.png);
+                        }
+                    }
+
+                    .hero-linkedin {
+                        background-image: url(../../../../public/assets/icons/linkedin1.png);
+
+                        &:hover {
+                            background-image: url(../../../../public/assets/icons/linkedin2.png);
+                        }
+                    }
+                }
+
+
+            }
+
+            .hero-name {
+                @include all.fl();
+                color: all.$col-white;
+                gap: 16px;
+
+                h1 {
+                    font-family: Anta;
+                    font-size: clamp(30px, 4.3dvw, 64px);
+                    text-align: center;
+                    font-weight: 400;
+                }
+
+                h2 {
+                    font-size: clamp(24px, 2.5dvw, 48px);
+                    text-align: center;
+                    font-family: 'Josefin Sans';
+                    font-weight: 400;
                 }
             }
-            
 
+            .hero-button{
+                display: inline-block;
+                background-image: url(../../../../public/assets/icons/Arrow_down.png);
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 32px;
+                height: 80px;
+                border: 1px solid all.$col-blue;
+                border-radius: 20px;
+                transition: 300ms;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+                
+            }
         }
+
+
 
     }
 

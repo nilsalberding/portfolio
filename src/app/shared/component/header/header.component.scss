@@ -1,10 +1,12 @@
+@use '../../../../../public/assets/styles/all-styles.scss' as all;
+
 header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: #89BCD9;
+    background-color: all.$col-blue;
     height: clamp(80px, 10dvh, 170px);
 
     .content {
@@ -18,13 +20,13 @@ header {
         nav {
             a {
                 margin: 0 24px;
-                color: #262E34;
+                color: all.$col-dark;
                 font-size: clamp(24px, 2dvh, 38px);
                 font-weight: 500;
-                transition: 200ms;
+                transition: 300ms;
 
                 &:hover {
-                    color: #F8F5EC;
+                    color: all.$col-white;
                 }
             }
         }
@@ -32,11 +34,11 @@ header {
             margin: 4px;
             font-family: 'Josefin Sans';
             font-size: 16px;
-            color: #262E34;
-            transition: 200ms;
+            color: all.$col-dark;
+            transition: 300ms;
 
             &:hover{
-                color: #F8F5EC;
+                color: all.$col-white;
             }
 
         }

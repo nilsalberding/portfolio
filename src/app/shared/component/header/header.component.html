@@ -2,14 +2,14 @@
     <div class="content">
         <a href=""><img src="assets/img/logo_header.png" alt=""></a>
         <nav>
-            <a href="">Why me</a>
+            <a href="">{{ 'header.whyMe' | translate}}</a>
             <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+            <a href="">{{ 'header.projects' | translate}}</a>
+            <a href="">{{ 'header.contact' | translate}}</a>
         </nav>
         <div>
-            <button id="btn-de">DE</button>
-            <button id="btn-en">EN</button>
+            <button (click)="useLanguage('de')" id="btn-de">DE</button>
+            <button (click)="useLanguage('en')" id="btn-en">EN</button>
         </div>
     </div>
 
