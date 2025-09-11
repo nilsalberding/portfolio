@@ -1,0 +1,51 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background-color: all.$col-dark;
+
+    .content {
+        @include all.fl();
+
+        .about-content {
+            @include all.fl($flexdir: row, $alit: flex-start);
+            gap: 24px;
+
+            div {
+                width: 40%;
+            }
+
+            .about-located {
+                @include all.fl($flexdir: row);
+                gap: 8px;
+
+                img {
+                    width: 70px;
+                }
+
+                span {
+                    font-size: 32px;
+                }
+
+                .blue {
+                    color: all.$col-blue;
+                }
+            }
+            .about-text{
+                @include all.fl($alit: flex-end);
+                gap: 16px;
+                p{
+                    font-size: clamp(20px, 0.8dvw, 40px);
+                }
+                a{
+                    color: all.$col-blue;
+                    font-size: clamp(20px, 0.9dvw, 48px);
+                    border: solid 1px all.$col-blue;
+                    border-radius: 24px;
+                    padding: 8px 16px;
+                    margin-bottom: 24px;
+                }
+            }
+
+        }
+    }
+}

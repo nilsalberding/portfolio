@@ -1,10 +1,14 @@
 {
     "header": {
-        "whyMe": "Why Me",
+        "whyMe": "About Me",
         "projects": "Projects",
         "contact": "Contact"
     },
-    "test": {
-        "test": "entest"
+    "about": {
+        "headline": "About me",
+        "locatedBlue": "I am",
+        "located": "located in Rostock..|",
+        "text": "For me, code is like a toolbox - I love turning ideas into something tangible, piece by piece. What excites me most is combining design and functionality to create interfaces that feel light and enjoyable. With tools like React and Tailwind, I quickly find creative solutions, always aiming to build modern and intuitive user experiences.",
+        "talk": "Let´s talk"
     }
 }
