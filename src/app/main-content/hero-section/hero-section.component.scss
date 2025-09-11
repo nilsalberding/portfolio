@@ -1,3 +1,41 @@
-section{
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    height: 650px;
+    background-color: all.$col-dark;
+
+    .content {
+        height: 100%;
+        @include all.fl($flexdir: row, $jc: space-between, $alit: flex-end);
+        .hero-img{
+            background-image: url(../../../../public/assets/img/bg_shape1.png);
+            background-size: cover;
+            transition: 200ms;
+            display: flex;
+            &:hover{
+                background-image: url(../../../../public/assets/img/bg_shape2.png);
+            }
+            img{
+                height: 100%;
+            }
+        }
+        .hero-content{
+            height: 100%;
+            @include all.fl($jc: space-between);
+            .hero-socials{
+                @include all.fl($flexdir: row, $jc:space-between);
+                .hero-mail{
+                    height: 16px;
+                    width: 16px;
+                    background-image: url(../../../../public/assets/icons/mail1.png);
+                }
+            }
+            
+
+        }
+
+    }
+
+
 
 }

@@ -15,18 +15,23 @@ body{
     font-size: 16px;
 }
 
-.content{
-    width: 100%;
-    max-width: 1920px;
-    padding: 100px 100px 0 100px;
-}
-
 button{
     cursor: pointer;
     border: none;
     background: transparent;
 }
 
+.content{
+    width: 100%;
+    max-width: 1920px;
+    padding: 100px 100px 0 100px;
+}
+
+// #region variables
+
+$col-dark: #262E34;
+$col-blue: #89BCD9;
+$col-white: #F8F5EC;
 
 
 // #region fonts
@@ -94,3 +99,5 @@ button{
   font-weight: 400;
   src: url('../public/assets/fonts/anta-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+// #endregion
