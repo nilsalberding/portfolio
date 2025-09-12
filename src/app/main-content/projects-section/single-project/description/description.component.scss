@@ -1,0 +1,35 @@
+@use '../../../../../../public/assets/styles/all-styles.scss' as all;
+
+
+.desc {
+    @include all.fl();
+    gap: 40px;
+    width: 650px;
+
+    .single-desc {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .about-project {
+                @include all.fl($flexdir: row, $jc: flex-start);
+                gap: 32px;
+                span{
+                    font-size: 20px;
+                }
+            }
+
+            h3 {
+                font-size: 28px;
+                font-weight: 400;
+            }
+            p{
+                line-height: 1.2;
+            }
+        }
+    }
+}
