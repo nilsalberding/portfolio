@@ -5,11 +5,15 @@
     @include all.fl();
     gap: 40px;
     width: 650px;
+    @include all.bigscreen{
+        width: 1000px;
+    }
 
     .single-desc {
         display: flex;
         align-items: flex-start;
         gap: 24px;
+
         >div {
             display: flex;
             flex-direction: column;
@@ -18,16 +22,19 @@
             .about-project {
                 @include all.fl($flexdir: row, $jc: flex-start);
                 gap: 32px;
-                span{
-                    font-size: 20px;
+
+                span {
+                    font-size: clamp(20px, 1.2dvw, 32px);
                 }
             }
 
             h3 {
-                font-size: 28px;
+                font-size: clamp(28px, 1.5dvw, 40px);
                 font-weight: 400;
             }
-            p{
+
+            p {
+                font-size: all.$p-text;
                 line-height: 1.2;
             }
         }

@@ -34,7 +34,7 @@ section {
                 @include all.fl($alit: flex-end);
                 gap: 16px;
                 p{
-                    font-size: clamp(20px, 0.8dvw, 40px);
+                    font-size: all.$p-text;
                     line-height: 1.2;
                 }
                 a{

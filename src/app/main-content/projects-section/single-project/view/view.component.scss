@@ -1,0 +1,56 @@
+@use '../../../../../../public/assets/styles/all-styles.scss' as all;
+
+.view-container {
+    @include all.fl();
+    width: 400px;
+    gap: 16px;
+    @include all.bigscreen{
+        width: 600px;
+    }
+    span{
+        font-size: clamp(16px, 0.8dvw, 28px);
+    }
+
+    >img {
+
+        width: clamp(280px, 30dvw, 600px);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 24px;
+    }
+
+    .tech-container {
+        display: flex;
+        gap: 32px;
+
+        img {
+            width: clamp(40px, 2.5dvw, 60px);
+        }
+    }
+
+    .link-container {
+        display: flex;
+        gap: 32px;
+        margin-top: 24px;
+        a {
+            padding: 12px 20px;            
+            border-radius: 24px;
+            transition: 300ms;
+        }
+        .link-test{
+            background-color: all.$col-blue;
+            color: all.$col-dark;
+            &:hover{
+                background-color: all.$col-white;
+            }
+        }
+        .link-git{
+            border: solid 1px all.$col-blue;
+            color: all.$col-blue;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+
+}
