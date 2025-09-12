@@ -37,6 +37,11 @@ section {
             height: 400px;
             background-image: url(../../../../public/assets/img/reference1.png);
             background-size: contain;
+            background-repeat: no-repeat;
+            transition: 300ms;
+            &:hover{
+                background-image: url(../../../../public/assets/img/reference2.png);
+            }
 
             p {
                 width: 250px;
