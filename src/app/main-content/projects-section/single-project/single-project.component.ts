@@ -10,4 +10,6 @@ import { ViewComponent } from './view/view.component';
 })
 export class SingleProjectComponent {
 
+  
+
 }

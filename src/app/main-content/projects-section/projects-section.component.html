@@ -1,2 +1,13 @@
-<p>projects-section works!</p>
-<app-single-project></app-single-project>
+<section>
+
+    <h1>My Projects</h1>
+    <nav>
+        <a [ngClass]="{'link-active': join}" (click)="setJoin()" >1. Join</a>
+        <a [ngClass]="{'link-active': game}" (click)="setgame()">2. El Pollo Loco</a>
+        <a [ngClass]="{'link-active': pokedex}" (click)="setPokedex()">3. Pokedex</a>
+        <a [ngClass]="{'link-active': newProject}" (click)="setNewProject()">4. Ongoing Project</a>
+    </nav>
+    <app-single-project></app-single-project>
+
+
+</section>

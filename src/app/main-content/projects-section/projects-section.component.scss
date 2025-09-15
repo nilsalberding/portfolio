@@ -1,0 +1,36 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    padding-top: 60px;
+    background-color: all.$col-dark;
+    @include all.fl();
+
+    nav{
+        @include all.fl($flexdir: row, $jc: flex-start);
+        width: 100%;
+        max-width: 1920px;
+        padding: 0 60px;
+        .link-active{
+            background-color: #2d3840;
+            color: all.$col-white;
+        }
+        a{
+            font-size: clamp(24px, 2dvw, 40px);
+            padding: 24px 50px;
+            color: all.$col-blue;
+            transition: 300ms;
+            cursor: pointer;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            &:hover{
+                color: all.$col-white;
+            }
+        }
+    }
+
+    app-single-project {
+        width: 100%;
+        @include all.fl();
+
+    }
+}
