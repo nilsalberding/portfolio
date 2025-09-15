@@ -15,5 +15,19 @@
         "headline": "My Skills",
         "learningTop": "I am currently learning",
         "learningBottom": "I am always eager to learn and continuously improve my skills to keep up with the latest technologies and trends."
+    },
+    "team": {
+        "headline": "Need a teamplayer? Here what my colleagues said about me"
+    },
+        "contact":{
+        "headline": "Contact Me",
+        "paragraph": "Looking for a dedicated frontend developer who does more than just write code? I combine clean, modern design with structured development. Let's connect - I'd love to learn more about your project.",
+        "name": "Your Name",
+        "Email": "Your Email",
+        "message": "Your Message",
+        "send": "Send",
+        "privacy1": "I've read the ",
+        "link": "privacy policy",
+        "privacy2": "and agree to the processing of my data as outlined."
     }
 }

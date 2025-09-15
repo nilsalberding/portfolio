@@ -1,0 +1,22 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background-color: all.$col-dark;
+
+    .content {
+        @include all.fl();
+        gap: 32px;
+
+
+        h2 {
+            color: all.$col-blue;
+            font-weight: 400;
+        }
+
+        div {
+            @include all.fl($flexdir: row);
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -15,5 +15,19 @@
         "headline": "Meine Skills",
         "learningTop": "Aktuell lerne ich",
         "learningBottom": "Ich bin stets motiviert, mich weiterzuentwickeln und meine Fähigkeiten mit den neuesten Technologien und Trends auszubauen."
+    },
+    "team": {
+        "headline": "Teamplayer gesucht? So sehen mich meine Kollegen."
+    },
+    "contact": {
+        "headline": "Kontakt",
+        "paragraph": "Sie suchen einen engagierten Frontend-Entwickler, der nicht nur Code schreibt, sondern auch im Team mitdenkt? Ich verbinde sauberes, modernes Design mit strukturierter Entwicklung. Lassen Sie uns ins Gespräch kommen – ich freue mich darauf, Ihr Projekt kennenzulernen.",
+        "name": "Name",
+        "Email": "Email",
+        "message": "Nachricht",
+        "send": "Senden",
+        "privacy1": "Ich habe die",
+        "link": "Datenschutzerklärung",
+        "privacy2": "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bestimmungen zu."
     }
 }
