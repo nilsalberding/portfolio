@@ -1,0 +1,121 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background-color: all.$col-dark;
+    padding-bottom: 100px;
+
+    .content {
+        @include all.fl();
+        max-width: 1100px;
+
+        >div {
+            @include all.fl($flexdir: row, $alit: flex-start, $jc: flex-start);
+            gap: 24px;
+            width: 100%;
+            margin-bottom: 48px;
+            font-size: 20px;
+
+            p {
+                width: 50%;
+                line-height: 1.2;
+                text-align: justify;
+            }
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    color: all.$col-white;
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+
+            input {
+                width: 100%;
+                padding: 16px;
+                background: transparent;
+                border: solid all.$col-blue 1px;
+                border-radius: 24px;
+                color: all.$col-white;
+                font-family: 'Josefin Sans';
+            }
+
+            label {
+                margin-left: 20px;
+                color: all.$col-blue;
+            }
+
+            .form-contact {
+                @include all.fl($flexdir: row);
+                gap: 16px;
+                margin-bottom: 16px;
+
+                >div {
+                    width: 50%;
+                    @include all.fl($alit: flex-start);
+                }
+
+            }
+
+            .form-message {
+                width: 100%;
+                @include all.fl($alit: flex-start);
+                margin-bottom: 16px;
+
+                textarea {
+                    min-height: 100px;
+                    width: 100%;
+                    padding: 16px;
+                    background: transparent;
+                    border: solid all.$col-blue 1px;
+                    border-radius: 24px;
+                    color: all.$col-white;
+                    font-family: Anta;
+                    resize: none;
+                }
+            }
+            .form-submit {
+                display: flex;
+                justify-content: space-between;
+
+                .checkbox{
+                    display: flex;
+                    align-items: flex-start;
+                    input{
+                        width: auto;
+                    }
+                    label{
+                        color: all.$col-white;
+                        span{
+                            color: all.$col-blue;
+                        }
+                    }
+                }
+
+                .btn-submit{
+                    width: auto;
+                    padding: 8px 16px;
+                    color: all.$col-blue;                    
+                }
+                >div{
+                    display: flex;
+
+                }
+
+            }
+
+            span {
+                color: all.$col-blue;
+            }
+
+        }
+    }
+}

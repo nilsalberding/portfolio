@@ -26,7 +26,7 @@
         "Email": "Your Email",
         "message": "Your Message",
         "send": "Send",
-        "privacy1": "I've read the ",
+        "privacy1": "I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.",
         "link": "privacy policy",
         "privacy2": "and agree to the processing of my data as outlined."
     }

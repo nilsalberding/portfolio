@@ -1,0 +1,40 @@
+<section>
+    <div class="content">
+        <h1>{{"contact.headline"|translate}}</h1>
+        <div>
+            <p>{{"contact.paragraph"|translate}}</p>
+            <div>
+                <a href=""><img src="assets/icons/icon _email_.png" alt=""> E-mail: nilsalberding&#64;web.de</a>
+                <a href=""><img src="assets/icons/icon _phone_.png" alt="">Tel: 0176 32859064</a>
+
+            </div>
+        </div>
+        <form action="">
+            <div class="form-contact">
+                <div>
+                    <label for="fname">{{"contact.name"|translate}}</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div>
+                    <label for="mail">{{"contact.Email"|translate}}</label>
+                    <input type="text" id="mail">
+                </div>
+            </div>
+            <div class="form-message">
+                <label for="message">{{"contact.message"|translate}}</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="form-submit">
+                <div class="checkbox">
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label for="privacy" [innerHTML]="'contact.privacy1'|translate"></label>
+                </div>
+
+                <input class="btn-submit" type="submit" value="Send">
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
