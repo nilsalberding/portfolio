@@ -16,6 +16,32 @@
         "learningTop": "Aktuell lerne ich",
         "learningBottom": "Ich bin stets motiviert, mich weiterzuentwickeln und meine Fähigkeiten mit den neuesten Technologien und Trends auszubauen."
     },
+    "projects": {
+        "tech": "Technologien",
+        "about": "Über das Projekt",
+        "organized": "Wie ich die Arbeit organisiert habe",
+        "learning": "Was ich gelernt habe",
+        "duration": "Dauer",
+        "pokedex": {
+            "duration": "1 Woche",
+            "about": "Die App funktioniert wie ein kleiner Pokédex und bietet dir schnelle Infos zu den ersten 151 Pokémon - von Typ und Attacken bis hin zu kleinen Fun-Facts. Mit einer einfachen Suche kannst du jedes Pokémon blitzschnell finden und deine Sammlung jederzeit durchstöbern.",
+            "organized": "Zuerst habe ich die Struktur und das Design der Benutzeroberfläche geplant. Dann habe ich die Inhalte der PokéAPI in Klassen organisiert, um alles übersichtlich und handhabbar zu halten. Schließlich habe ich den Pokédex zum Leben erweckt, indem ich den Code geschrieben habe, der alles zum Funktionieren bringt.",
+            "learning": "Durch dieses Projekt habe ich zunächst gelernt, Klassen zu nutzen, um Inhalte zu strukturieren. Außerdem habe ich praktische Erfahrung im Umgang mit REST-APIs anhand der PokéAPI gesammelt."
+        },
+        "game":{
+            "duration": "4 Wochen",
+            "about": "El Pollo Loco ist ein unterhaltsames Jump'n'Run-Spiel, in dem du in die Rolle von Pepe Pellegrino schlüpfst, der freche Hühner und einen mächtigen Boss bekämpfen muss. Um seine Gegner zu besiegen, kann Pepe geschickt springen und Flaschen werfen - ein simples, aber spaßiges Gameplay.",
+            "organized": "Zu Beginn habe ich die notwendigen Klassen geplant und ihre Struktur festgelegt, um eine saubere Grundlage für das Projekt zu schaffen. Anschließend habe ich die Objekte in die Spielwelt integriert und mit den passenden Funktionen ausgestattet - so konnte Schritt für Schritt ein lebendiges Spielerlebnis entstehen.",
+            "learning": "Die Entwicklung dieses Spiels hat mir tiefere Einblicke in die objektorientierte Programmierung gegeben und mir gezeigt, wie wichtig sauberes, modulares Arbeiten für eine klare und erweiterbare Code-Struktur ist."
+        },
+
+        "join": {
+            "duration": "5 Wochen",
+            "about": "Task-Manager, inspiriert vom Kanban-System, mit dem du Aufgaben erstellen, organisieren und priorisieren kannst - dank Drag-and-Drop-Funktionalität. Weise Benutzern und Kategorien Aufgaben zu, um alles übersichtlich und gut strukturiert zu halten.",
+            "organized": "Für dieses Angular-Projekt habe ich die Komponentenstruktur und die Datenflüsse sorgfältig geplant, um eine klare und wiederverwendbare Architektur zu schaffen. Die Aufgabenverwaltung wurde in modulare Komponenten unterteilt, die einfach erweitert oder angepasst werden können.",
+            "learning": "Während der Umsetzung habe ich praktische Erfahrungen in modularer Entwicklung und im Umgang mit State-Management gesammelt. Dadurch konnte ich sauberen, wartbaren und gut strukturierten Code schreiben, der eine flexible Aufgabenverwaltung ermöglicht."
+        }
+    },
     "team": {
         "headline": "Teamplayer gesucht? So sehen mich meine Kollegen."
     },

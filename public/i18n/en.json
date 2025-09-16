@@ -16,10 +16,35 @@
         "learningTop": "I am currently learning",
         "learningBottom": "I am always eager to learn and continuously improve my skills to keep up with the latest technologies and trends."
     },
+    "projects": {
+        "tech": "Technologies",
+        "about": "About the project",
+        "organized": "How i have organized my work",
+        "learning": "What i have learnt",
+        "duration": "Duration",
+        "pokedex": {
+            "duration": "1 week",
+            "about": "The app works like a mini Pokédex, giving you quick info on the first 151 Pokémon - from types and moves to fun little facts. With a simple search, you can instantly find any Pokémon and browse your collection anytime.",
+            "organized": "First, I planned the structure and design of the UI. Then, I organized the content from the PokéAPI into classes to keep everything clean and manageable. Finally, I brought the Pokédex to life by writing the code that makes it all work.",
+            "learning": "With this project, I first learned how to use classes to organize content. I also gained experience working with REST APIs through the PokéAPI."
+        },
+        "game": {
+            "duration": "4 weeks",
+            "about": "El Pollo Loco is a fun jump'n'run game where you take on the role of Pepe Pellegrino, battling mischievous chickens and a mighty boss. To defeat his enemies, Pepe can jump skillfully and throw bottles — making the gameplay simple, yet entertaining.",
+            "organized": "At the start, I designed the necessary classes and defined their structure to create a solid foundation for the project. After that, I integrated the objects into the game world and equipped them with the right functions - bringing the gameplay to life step by step.",
+            "learning": "Developing this game gave me valuable insights into object-oriented programming and taught me the importance of clean, modular work for creating clear and scalable code structures."
+        },
+        "join": {
+            "duration": "5 weeks",
+            "about": "Task manager inspired by the Kanban system, allowing you to create, organize, and prioritize tasks with drag-and-drop functionality. Assign users and categories to keep everything structured and manageable.",
+            "organized": "For this Angular project, I first carefully planned the component structure and data flows to ensure a clear and reusable architecture. I also divided the task management into separate, modular components that can be easily extended or adjusted.",
+            "learning": "During implementation, I gained valuable experience in modular development and working with state management. These skills helped me write clean, maintainable, and well-structured code, making the project more flexible."
+        }
+    },
     "team": {
         "headline": "Need a teamplayer? Here what my colleagues said about me"
     },
-        "contact":{
+    "contact": {
         "headline": "Contact Me",
         "paragraph": "Looking for a dedicated frontend developer who does more than just write code? I combine clean, modern design with structured development. Let's connect - I'd love to learn more about your project.",
         "name": "Your Name",
