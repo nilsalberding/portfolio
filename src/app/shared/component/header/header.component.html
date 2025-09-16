@@ -2,10 +2,10 @@
     <div class="content">
         <a href=""><img src="assets/img/logo_header.png" alt=""></a>
         <nav>
-            <a href="">{{ 'header.whyMe' | translate}}</a>
-            <a href="">Skills</a>
-            <a href="">{{ 'header.projects' | translate}}</a>
-            <a href="">{{ 'header.contact' | translate}}</a>
+            <a href="#about">{{ 'header.whyMe' | translate}}</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">{{ 'header.projects' | translate}}</a>
+            <a href="#contact">{{ 'header.contact' | translate}}</a>
         </nav>
         <div>
             <button [ngClass]="{'active': btnDe}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>

@@ -95,20 +95,9 @@ section {
             }
 
             .hero-button{
-                display: inline-block;
+                @include all.arrowbtn();
                 background-image: url(../../../../public/assets/icons/Arrow_down.png);
-                background-size: auto;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 32px;
-                height: 80px;
-                border: 1px solid all.$col-blue;
-                border-radius: 20px;
-                transition: 300ms;
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.15);
-                }
-                
+
             }
         }
 
