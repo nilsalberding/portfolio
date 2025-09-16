@@ -1,6 +1,24 @@
+
+
 @mixin fl($jc: center, $alit: center, $flexdir: column, $gap: 0, $rgap: 0, $cgap: 0, ) {
     display: flex;
     justify-content: $jc;
     align-items: $alit;
     flex-direction: $flexdir;
+}
+
+@mixin arrowbtn() {
+    display: inline-block;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 80px;
+    border: 1px solid #89BCD9;
+    border-radius: 20px;
+    transition: 300ms;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
 }
