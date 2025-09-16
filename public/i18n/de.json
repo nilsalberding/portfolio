@@ -19,9 +19,9 @@
     "projects": {
         "tech": "Technologien",
         "about": "Über das Projekt",
-        "organized": "Wie ich die Arbeit organisiert habe",
+        "organized": "Meine Arbeitsstruktur",
         "learning": "Was ich gelernt habe",
-        "duration": "Dauer",
+        "duration": "Arbeitszeit",
         "pokedex": {
             "duration": "1 Woche",
             "about": "Die App funktioniert wie ein kleiner Pokédex und bietet dir schnelle Infos zu den ersten 151 Pokémon - von Typ und Attacken bis hin zu kleinen Fun-Facts. Mit einer einfachen Suche kannst du jedes Pokémon blitzschnell finden und deine Sammlung jederzeit durchstöbern.",

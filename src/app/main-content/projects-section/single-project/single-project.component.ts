@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DescriptionComponent } from './description/description.component';
 import { ViewComponent } from './view/view.component';
+import { ProjectsdataService } from '../../../services/projectsdata.service';
 
 @Component({
   selector: 'app-single-project',
@@ -9,6 +10,8 @@ import { ViewComponent } from './view/view.component';
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
+
+  projectsdata = inject(ProjectsdataService);
 
   
 
