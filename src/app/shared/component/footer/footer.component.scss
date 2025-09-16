@@ -1,0 +1,62 @@
+@use '../../../../../public/assets/styles/all-styles.scss' as all;
+
+footer {
+    background-color: all.$col-blue ;
+    height: 150px;
+    @include all.fl();
+
+    .content {
+        @include all.fl($flexdir: row, $jc: space-between);
+        padding: 0 80px;
+
+        .legal-notice-container {
+            @include all.fl($alit: flex-start);
+            gap: 16px;
+            color: all.$col-dark;
+
+            a {
+                color: all.$col-dark;
+
+                &:hover {
+                    color: all.$col-white;
+                }
+            }
+        }
+
+        .link-container {
+            display: flex;
+            gap: 16px;
+            a {
+                display: inline-block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 28px;
+                height: 28px;
+            }
+
+            #link-github {
+                background-image: url(../../../../../public/assets/icons/github3.png);
+
+                &:hover {
+                    background-image: url(../../../../../public/assets/icons/github4.png);
+                }
+            }
+            #link-mail {
+                background-image: url(../../../../../public/assets/icons/mail3.png);
+
+                &:hover {
+                    background-image: url(../../../../../public/assets/icons/mail4.png);
+                }
+            }
+            #link-linkedin {
+                background-image: url(../../../../../public/assets/icons/linkedin3.png);
+
+                &:hover {
+                    background-image: url(../../../../../public/assets/icons/linkedin4.png);
+                }
+            }
+
+        }
+    }
+}
