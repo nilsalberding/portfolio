@@ -43,7 +43,11 @@
         }
     },
     "team": {
-        "headline": "Teamplayer gesucht? So sehen mich meine Kollegen."
+        "headline": "Teamplayer gesucht? So sehen mich meine Kollegen.",
+        "reference1": "Der beste Schüler den ich je hatte. Und dazu sieht er noch so viel besser aus als ich. Einfach nur WOW.",
+        "reference2": "Ein Softwareentwickler durch und durch. Diesem jungen, unglaublich gut aussehenden Mann gelingt wirklich alles.",
+        "reference3": "Kranker Typ. Gibt es eigentlich etwas, was dieser Mensch nicht kann? Mir fällt auf jeden Fall nichts ein"
+
     },
     "contact": {
         "headline": "Kontakt",

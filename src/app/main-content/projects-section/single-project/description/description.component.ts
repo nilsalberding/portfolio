@@ -10,14 +10,14 @@ import { ProjectsdataService } from '../../../../services/projectsdata.service';
 })
 export class DescriptionComponent {
 
-  @Input() project =     {
-      name: "Pokedex",
-      img: 'assets/img/pokedex.png',
-      duration: 'projects.pokedex.duration',
-      about: 'projects.pokedex.about',
-      organized: 'projects.pokedex.organized',
-      learning: 'projects.pokedex.learning'
-    };
+  @Input() project = {
+    name: "Pokedex",
+    img: 'assets/img/pokedex.png',
+    duration: 'projects.pokedex.duration',
+    about: 'projects.pokedex.about',
+    organized: 'projects.pokedex.organized',
+    learning: 'projects.pokedex.learning'
+  };
 
   projectsdata = inject(ProjectsdataService)
 }

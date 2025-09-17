@@ -42,7 +42,10 @@
         }
     },
     "team": {
-        "headline": "Need a teamplayer? Here what my colleagues said about me"
+        "headline": "Need a teamplayer? Here what my colleagues said about me",
+        "reference1": "Best student I ever had. And the dude even looks way better than me… like, seriously, wow.",
+        "reference2": "Straight-up born to code. This young, ridiculously good-looking guy just wins at life",
+        "reference3": "Absolute beast. Is there anything this guy can't do? Yeah, didn't think so."
     },
     "contact": {
         "headline": "Contact Me",

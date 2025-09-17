@@ -2,9 +2,11 @@
     <div class="content">
         <h2>{{'team.headline'|translate}}</h2>
         <div>
-            <app-team-comment></app-team-comment>
-            <app-team-comment></app-team-comment>
-            <app-team-comment></app-team-comment>
+            @for (reference of referenceData.references; track reference.name) {
+                <app-team-comment [reference]="reference"></app-team-comment>
+            }
+            
+
         </div>
         
     </div>
