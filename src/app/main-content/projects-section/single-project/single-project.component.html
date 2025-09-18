@@ -1,9 +1,7 @@
 <div>
     <div class="content">
-        @for(project of projectsdata.projects; track project.name){
-            <app-description [project]="project"></app-description>
-        }
-        
-        <app-view></app-view>
+
+        <app-description [project]="project"></app-description>
+        <app-view [project]="project"></app-view>
     </div>
 </div>

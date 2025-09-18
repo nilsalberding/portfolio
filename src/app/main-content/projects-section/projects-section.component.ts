@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { CommonModule } from '@angular/common';
+import { ProjectsdataService } from '../../services/projectsdata.service';
 
 
 @Component({
@@ -11,30 +12,32 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsSectionComponent {
 
+  projectsdata = inject(ProjectsdataService);
+
   join = true;
   game = false;
   pokedex = false;
   newProject = false;
 
-  setJoin(){
+  setJoin() {
     this.join = true;
     this.game = false;
     this.pokedex = false;
     this.newProject = false;
   }
-  setgame(){
+  setgame() {
     this.join = false;
     this.game = true;
     this.pokedex = false;
     this.newProject = false;
   }
-  setPokedex(){
+  setPokedex() {
     this.join = false;
     this.game = false;
     this.pokedex = true;
     this.newProject = false;
   }
-  setNewProject(){
+  setNewProject() {
     this.join = false;
     this.game = false;
     this.pokedex = false;

@@ -6,10 +6,11 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
 import { CommonModule } from '@angular/common';
 import { TeamSectionComponent } from './team-section/team-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { HeaderComponent } from '../shared/component/header/header.component';
 
 @Component({
   selector: 'app-main-content',
-  imports: [CommonModule, HeroSectionComponent, WhyMeSectionComponent, SkillsSectionComponent, ProjectsSectionComponent, TeamSectionComponent, ContactSectionComponent],
+  imports: [CommonModule, HeroSectionComponent, WhyMeSectionComponent, SkillsSectionComponent, ProjectsSectionComponent, TeamSectionComponent, ContactSectionComponent, HeaderComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

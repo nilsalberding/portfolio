@@ -1,11 +1,14 @@
 <div class="view-container">
     <span>Technologies</span>
     <div class="tech-container">
-        <img src="assets/icons/html.png" alt="">
-        <img src="assets/icons/css.png" alt="">
-        <img src="assets/icons/javascript.png" alt="">
+        @for (icon of project.icons; track $index) {
+        <img src="assets/icons/{{icon}}" alt="">
+        }
+
+        <!-- <img src="assets/icons/css.png" alt="">
+        <img src="assets/icons/javascript.png" alt=""> -->
     </div>
-    <img src="assets/img/elpolloloco.png" alt="">
+    <img src="{{project.img}}" alt="">
     <div class="link-container">
         <a class="link-test" href="">Live Test</a>
         <a class="link-git" href="">GitHub</a>

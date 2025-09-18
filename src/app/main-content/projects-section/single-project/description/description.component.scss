@@ -4,7 +4,7 @@
 .desc {
     @include all.fl();
     gap: 40px;
-    width: 650px;
+    width: 800px;
     @include all.bigscreen{
         width: 1000px;
     }

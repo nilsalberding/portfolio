@@ -7,7 +7,10 @@
         <a [ngClass]="{'link-active': pokedex}" (click)="setPokedex()">3. Pokedex</a>
         <a [ngClass]="{'link-active': newProject}" (click)="setNewProject()">4. Ongoing Project</a>
     </nav>
-    <app-single-project></app-single-project>
+    @for(project of projectsdata.projects; track project.name){
+        <app-single-project [project]="project"></app-single-project>
+    }
+    
 
 
 </section>
