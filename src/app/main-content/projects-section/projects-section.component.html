@@ -2,13 +2,13 @@
 
     <h1>My Projects</h1>
     <nav>
-        <a [ngClass]="{'link-active': join}" (click)="setJoin()" >1. Join</a>
-        <a [ngClass]="{'link-active': game}" (click)="setgame()">2. El Pollo Loco</a>
-        <a [ngClass]="{'link-active': pokedex}" (click)="setPokedex()">3. Pokedex</a>
-        <a [ngClass]="{'link-active': newProject}" (click)="setNewProject()">4. Ongoing Project</a>
+        <a [ngClass]="{'link-active': projectsdata.projects[0].open}" (click)="setPokedex()" >1. Pokedex</a>
+        <a [ngClass]="{'link-active': projectsdata.projects[1].open}" (click)="setGame()">2. El Pollo Loco</a>
+        <a [ngClass]="{'link-active': projectsdata.projects[2].open}" (click)="setJoin()">3. Join</a>
+        <!-- <a [ngClass]="{'link-active': newProject}" (click)="setNewProject()">4. Ongoing Project</a> -->
     </nav>
     @for(project of projectsdata.projects; track project.name){
-        <app-single-project [project]="project"></app-single-project>
+        <app-single-project [project]="project" [ngStyle]="{'display': project.open ? 'flex' : 'none'}"></app-single-project>
     }
     
 

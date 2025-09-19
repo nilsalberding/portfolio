@@ -8,8 +8,9 @@ section {
 
 
         >div {
-            @include all.fl($flexdir: row);
+            @include all.fl($flexdir: row,);
             gap: 64px;
+            width: 100%;
         }
 
         .skills-icons {
@@ -18,42 +19,41 @@ section {
             width: 400px;
             flex-wrap: wrap;
 
-            // .icon {
-            //     @include all.fl($jc: flex-start);
-            //     gap: 16px;
-            //     width: 70px;
-
-            //     span {
-            //         color: all.$col-blue;
-            //         text-align: center;
-            //     }
-            // }
         }
 
         .skills-learning {
             @include all.fl();
             gap: 24px;
             width: 400px;
-            height: 400px;
+            aspect-ratio: 1/1;
+            padding: 48px;
             background-image: url(../../../../public/assets/img/reference1.png);
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
             transition: 300ms;
             &:hover{
                 background-image: url(../../../../public/assets/img/reference2.png);
             }
 
             p {
-                width: 250px;
+                // width: 100%;
                 text-align: center;
                 line-height: 1.3;
+                font-size: all.$p-text;
             }
             >div{
                 @include all.fl($flexdir: row);
+                gap: 16px;
                 .icon{
-                    gap: 8px;
+                    
+                    img{
+                        height: clamp(60px, 2dvw, 90px);
+                    }
+                    
                     span{
                         color: all.$col-white;
+                        font-size: all.$p-text;
                     }
                 }
             }
@@ -62,7 +62,7 @@ section {
         .icon {
             @include all.fl($jc: flex-start);
             gap: 16px;
-            width: 70px;
+            // width: 70px;
 
             span {
                 color: all.$col-blue;

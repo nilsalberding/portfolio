@@ -19,5 +19,6 @@ export const appConfig: ApplicationConfig = {
         suffix: '.json'
       })
     }),
+    provideHttpClient()
   ]
 };

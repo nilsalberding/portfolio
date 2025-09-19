@@ -39,7 +39,7 @@ section {
                 }
                 a{
                     color: all.$col-blue;
-                    font-size: clamp(20px, 0.9dvw, 48px);
+                    font-size: all.$p-text;
                     border: solid 1px all.$col-blue;
                     border-radius: 24px;
                     padding: 8px 16px;

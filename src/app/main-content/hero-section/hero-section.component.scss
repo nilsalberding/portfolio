@@ -1,33 +1,48 @@
 @use '../../../../public/assets/styles/all-styles.scss' as all;
 
 section {
-    height: 650px;
+    height: calc(100dvh - all.$header-height);
     background-color: all.$col-dark;
 
     .content {
         height: 100%;
+        @include all.bigscreen{
+            @include all.fl($flexdir: column-reverse, $jc: space-between, $alit: flex-end);
+        }
         @include all.fl($flexdir: row, $jc: space-between, $alit: flex-end);
 
         .hero-img {
-            background-image: url(../../../../public/assets/img/bg_shape1.png);
+            background-image: url(../../../../public/assets/img/shape1.svg);
             background-size: cover;
             transition: 200ms;
             display: flex;
+            width: 50%;
+            @include all.bigscreen{
+                width: 100%;
+                height: 50%;
+            }
+            
+            
 
             &:hover {
-                background-image: url(../../../../public/assets/img/bg_shape2.png);
+                background-image: url(../../../../public/assets/img/shape2.svg);
             }
 
             img {
+                object-fit: contain ;
                 height: 100%;
+                width: 100%;
             }
         }
 
         .hero-content {
             height: 100%;
             width: 50%;
-            @include all.fl($jc: space-between);
+            @include all.fl($jc: space-around);
             padding-bottom: 60px;
+            @include all.bigscreen{
+                width: 100%;
+            }
 
             .hero-socials {
                 width: 100%;
@@ -81,7 +96,7 @@ section {
                 h1 {
                     font-family: Anta;
                     color: all.$col-white;
-                    font-size: clamp(30px, 4.3dvw, 64px);
+                    font-size: clamp(30px, 4.3dvw, 90px);
                     text-align: center;
                     font-weight: 400;
                 }

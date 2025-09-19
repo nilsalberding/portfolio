@@ -15,7 +15,8 @@ export class ProjectsdataService {
       about: 'projects.pokedex.about',
       organized: 'projects.pokedex.organized',
       learning: 'projects.pokedex.learning',
-      icons:["html.png","css.png","javascript.png"]
+      icons:["html.png","css.png","javascript.png"],
+      open: true
     },
     {
       name: "El Pollo Loco",
@@ -24,7 +25,8 @@ export class ProjectsdataService {
       about: 'projects.game.about',
       organized: 'projects.game.organized',
       learning: 'projects.game.learning',
-      icons:["html.png","css.png","javascript.png"]
+      icons:["html.png","css.png","javascript.png"],
+      open: false
     },
     {
       name: "Join",
@@ -33,7 +35,8 @@ export class ProjectsdataService {
       about: 'projects.join.about',
       organized: 'projects.join.organized',
       learning: 'projects.join.learning',
-      icons:["angular.png","typescript.png","firebase.png"]
+      icons:["angular.png","typescript.png","firebase.png"],
+      open: false
     }
   ]
 }

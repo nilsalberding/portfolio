@@ -7,7 +7,7 @@ header {
     align-items: center;
 
     background-color: all.$col-blue;
-    height: clamp(80px, 10dvh, 170px);
+    height: all.$header-height;
 
     .content {
         display: flex;
