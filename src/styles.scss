@@ -43,6 +43,15 @@ h1{
     width: 100%;
     max-width: 1920px;
     padding: 80px 80px 0 80px;
+    @include all.notebook{
+        padding: 50px 50px 0 50px;
+    }
+    @include all.tablet{
+        padding: 50px 35px 0 35px;
+    }
+    @include all.mobile{
+        padding: 40px 16px 0 16px;
+    }
 }
 
 .d-none {

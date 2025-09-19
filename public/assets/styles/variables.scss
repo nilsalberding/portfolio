@@ -1,7 +1,10 @@
+@use './media-queries.scss' as media;
+
 $col-dark: #262E34;
 $col-blue: #89BCD9;
 $col-white: #F8F5EC;
 
 $p-text: 20px;
 
-$header-height: 10dvh;
+
+$header-height: clamp(80px, 10dvh, 150px);

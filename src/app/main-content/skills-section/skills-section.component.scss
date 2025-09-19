@@ -8,9 +8,13 @@ section {
 
 
         >div {
-            @include all.fl($flexdir: row,);
+            @include all.fl($flexdir: row, );
             gap: 64px;
             width: 100%;
+
+            @include all.notebook {
+                flex-direction: column;
+            }
         }
 
         .skills-icons {
@@ -19,9 +23,33 @@ section {
             width: 400px;
             flex-wrap: wrap;
 
+            @include all.notebook {
+                width: 80%;
+            }
+
+            .icon {
+                @include all.notebook {
+                    width: 50px;
+                }
+
+                img {
+                    @include all.tablet {
+                        height: 40px;
+                    }
+                }
+
+                span {
+                    @include all.tablet {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+
         }
 
         .skills-learning {
+
             @include all.fl();
             gap: 24px;
             width: 400px;
@@ -32,26 +60,34 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             transition: 300ms;
-            &:hover{
+
+            @include all.notebook {
+                display: none;
+
+            }
+
+            &:hover {
                 background-image: url(../../../../public/assets/img/reference2.png);
             }
 
             p {
-                // width: 100%;
                 text-align: center;
                 line-height: 1.3;
                 font-size: all.$p-text;
             }
-            >div{
+
+            >div {
                 @include all.fl($flexdir: row);
                 gap: 16px;
-                .icon{
-                    
-                    img{
+
+                .icon {
+
+                    img {
                         height: clamp(60px, 2dvw, 90px);
+
                     }
-                    
-                    span{
+
+                    span {
                         color: all.$col-white;
                         font-size: all.$p-text;
                     }
@@ -62,11 +98,51 @@ section {
         .icon {
             @include all.fl($jc: flex-start);
             gap: 16px;
-            // width: 70px;
 
             span {
                 color: all.$col-blue;
                 text-align: center;
+            }
+        }
+
+        .skills-learning-mobile {
+            @include all.desktop {
+                display: none;
+            }
+
+            @include all.fl();
+
+            >h4 {
+                color: all.$col-blue;
+                margin-bottom: 32px
+            }
+
+            >div {
+                @include all.fl($flexdir: row-reverse);
+                @media(max-width: 400px){
+                    flex-direction: column;
+                    gap: 16px;
+                }
+
+                .icons-learning {
+                    @include all.fl($flexdir: row);
+                    gap: 16px;
+                    padding: 32px;
+                    background-image: url(../../../../public/assets/img/reference1.png);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                p {
+                    width: 300px;
+                    line-height: 1.2;
+                    font-size: all.$p-text;
+                    @include all.mobile{
+                        font-size: 16px;
+                        width: 180px;
+                    }
+                }
             }
         }
     }
