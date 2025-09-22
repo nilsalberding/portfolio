@@ -13,14 +13,14 @@
             <div class="form-contact">
                 <div>
                     <label for="name">{{"contact.name"|translate}}</label>
-                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" required>
+                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder='{{"contact.name"|translate}}' required>
                     @if (!name.valid && name.touched){
                         <span>Please enter a name!</span>
                     }
                 </div>
                 <div>
                     <label for="mail">{{"contact.Email"|translate}}</label>
-                    <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="mail" name="mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="mail" name="mail" placeholder='{{"contact.Email"|translate}}' required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     @if (!mail.valid && name.touched) {
                         <span>Please enter a Email-Adress!</span>
                     }
@@ -28,15 +28,15 @@
             </div>
             <div class="form-message">
                 <label for="message">{{"contact.message"|translate}}</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" required></textarea>
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder='{{"contact.message"|translate}}' required></textarea>
                 @if (!message.valid && message.touched) {
                     <span>Please enter a message!</span>
                 }
             </div>
             <div class="form-submit">
                 <div class="checkbox">
-                    <input type="checkbox" name="privacy" id="privacy">
-                    <label for="privacy" [innerHTML]="'contact.privacy1'|translate"></label>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                    <label for="privacy">{{'contact.privacy1'|translate}} <a href="">{{'contact.link'|translate}}</a>{{'contact.privacy2'|translate}}</label>
                 </div>
 
                 <input class="btn-submit" type="submit" value="Send">

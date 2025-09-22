@@ -52,12 +52,12 @@
     "contact": {
         "headline": "Kontakt",
         "paragraph": "Sie suchen einen engagierten Frontend-Entwickler, der nicht nur Code schreibt, sondern auch im Team mitdenkt? Ich verbinde sauberes, modernes Design mit strukturierter Entwicklung. Lassen Sie uns ins Gespräch kommen – ich freue mich darauf, Ihr Projekt kennenzulernen.",
-        "name": "Name",
-        "Email": "Email",
-        "message": "Nachricht",
+        "name": "Dein Name",
+        "Email": "Deine Email",
+        "message": "Deine Nachricht",
         "send": "Senden",
-        "privacy1": "Ich habe die",
+        "privacy1": "Ich habe die ",
         "link": "Datenschutzerklärung",
-        "privacy2": "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bestimmungen zu."
+        "privacy2": " gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bestimmungen zu."
     }
 }

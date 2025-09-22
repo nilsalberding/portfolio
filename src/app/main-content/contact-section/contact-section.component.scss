@@ -15,10 +15,23 @@ section {
             margin-bottom: 48px;
             font-size: 20px;
 
+            @include all.tablet {
+                @include all.fl($flexdir: column-reverse, $alit: flex-start);
+
+            }
+
+            @include all.mobile {
+                font-size: 16px;
+            }
+
             p {
                 width: 50%;
                 line-height: 1.2;
                 text-align: justify;
+
+                @include all.tablet {
+                    width: 100%;
+                }
             }
 
             >div {
@@ -50,7 +63,14 @@ section {
 
                 &:focus {
                     background-color: rgba(255, 255, 255, 0.15);
+                }
 
+                &::placeholder {
+                    color: transparent;
+
+                    @include all.tablet {
+                        color: #6b756d;
+                    }
                 }
             }
 
@@ -58,16 +78,44 @@ section {
                 margin-left: 20px;
                 margin-bottom: 4px;
                 color: all.$col-blue;
+
             }
 
             .form-contact {
                 @include all.fl($flexdir: row);
                 gap: 16px;
                 margin-bottom: 16px;
+                height: 100px;
+                @include all.tablet{
+                    @include all.fl();
+                    height: auto;
+                }
 
                 >div {
                     width: 50%;
                     @include all.fl($alit: flex-start);
+                    @include all.tablet{
+                        width: 100%;
+                        margin-bottom: 16px ;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    top: 68px;
+
+                    @include all.tablet {
+                        top: 48px;
+                    }
+
+                    left: 0px;
+                }
+
+                label {
+
+                    @include all.tablet {
+                        display: none;
+                    }
                 }
 
             }
@@ -85,25 +133,58 @@ section {
                     border: solid all.$col-blue 1px;
                     border-radius: 24px;
                     color: all.$col-white;
-                    font-family: Anta;
+                    font-family: 'Josefin Sans';
                     resize: none;
                     outline: none;
+                    margin-bottom: 24px;
 
                     &:focus {
                         background-color: rgba(255, 255, 255, 0.15);
                         border-color: all.$col-blue;
-
                     }
+
+                    &::placeholder {
+                        color: transparent;
+
+                        @include all.tablet {
+                            color: #6b756d;
+                        }
+                    }
+                }
+
+                label {
+
+                    @include all.tablet {
+                        display: none;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    left: 0px;
+                    top: 170px;
+
+                    @include all.tablet {
+                        top: 150px;
+                    }
+
+                    
                 }
             }
 
             .form-submit {
                 display: flex;
                 justify-content: space-between;
+                @include all.tablet{
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
 
                 .checkbox {
                     display: flex;
                     align-items: flex-start;
+                    width: 100%;
+                    margin-bottom: 16px;
 
                     input {
                         width: auto;
@@ -111,8 +192,9 @@ section {
 
                     label {
                         color: all.$col-white;
+                        line-height: 1.2;
 
-                        span {
+                        a {
                             color: all.$col-blue;
                         }
                     }
@@ -151,6 +233,11 @@ section {
             margin-right: 20px;
             @include all.arrowbtn();
             background-image: url(../../../../public/assets/icons/Arrow_up.png);
+
+            @media(max-width: 850px) {
+                position: relative;
+                margin-bottom: 48px;
+            }
         }
     }
 }
