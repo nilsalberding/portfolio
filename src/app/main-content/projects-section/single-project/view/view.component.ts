@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-view',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './view.component.html',
   styleUrl: './view.component.scss'
 })
@@ -15,6 +16,7 @@ export class ViewComponent {
     about: 'projects.pokedex.about',
     organized: 'projects.pokedex.organized',
     learning: 'projects.pokedex.learning',
+    tech: 'HTML, CSS, JavaScript',
     icons:["html.png","css.png","javascript.png"]
   };
 

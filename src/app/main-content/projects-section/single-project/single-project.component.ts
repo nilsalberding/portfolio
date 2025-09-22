@@ -19,6 +19,7 @@ export class SingleProjectComponent {
     about: 'projects.pokedex.about',
     organized: 'projects.pokedex.organized',
     learning: 'projects.pokedex.learning',
+    tech: 'HTML, CSS, JavaScript',
     icons:["html.png","css.png","javascript.png"]
   }
 

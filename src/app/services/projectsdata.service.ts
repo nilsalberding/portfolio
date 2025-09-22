@@ -16,6 +16,7 @@ export class ProjectsdataService {
       organized: 'projects.pokedex.organized',
       learning: 'projects.pokedex.learning',
       icons:["html.png","css.png","javascript.png"],
+      tech: 'HTML, CSS, JavaScript',
       open: true
     },
     {
@@ -26,6 +27,7 @@ export class ProjectsdataService {
       organized: 'projects.game.organized',
       learning: 'projects.game.learning',
       icons:["html.png","css.png","javascript.png"],
+      tech: 'HTML, CSS, JavaScript',
       open: false
     },
     {
@@ -36,6 +38,7 @@ export class ProjectsdataService {
       organized: 'projects.join.organized',
       learning: 'projects.join.learning',
       icons:["angular.png","typescript.png","firebase.png"],
+      tech: 'Angular, TypeScript, Firebase',
       open: false
     }
   ]

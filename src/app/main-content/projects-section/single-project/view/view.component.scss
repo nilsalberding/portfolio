@@ -4,11 +4,19 @@
     @include all.fl();
     width: 400px;
     gap: 16px;
+    
     @include all.bigscreen{
         width: 600px;
     }
-    span{
+
+    @media(max-width: 1200px){
+        width: 100%;
+    }
+    >span{
         font-size: clamp(16px, 0.8dvw, 28px);
+        @media(max-width: 1200px){
+            display: none;
+        }
     }
 
     >img {
@@ -21,6 +29,9 @@
     }
 
     .tech-container {
+        @media(max-width: 1200px){
+            display: none;
+        }
         display: flex;
         gap: 32px;
 
@@ -52,6 +63,23 @@
             &:hover{
                 background-color: rgba(255, 255, 255, 0.15);
             }
+        }
+        @media(max-width: 1200px){
+            display: none;
+        }
+    }
+
+    .mobile-container{
+        width: 100%;
+        @include all.fl($alit: flex-start);
+        gap: 8px;
+        @media(min-width: 1200px){
+            display: none;
+        }
+        h2{
+            color: all.$col-blue;
+            font-weight: 400;
+            margin-bottom: 8px;
         }
     }
 

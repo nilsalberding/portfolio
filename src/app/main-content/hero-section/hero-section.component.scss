@@ -6,9 +6,16 @@ section {
 
     .content {
         height: 100%;
-        @include all.bigscreen{
+
+        @include all.bigscreen {
             @include all.fl($flexdir: column-reverse, $jc: space-between, $alit: flex-end);
         }
+
+        @include all.notebook {
+            justify-content: center;
+            align-items: center;
+        }
+
         @include all.fl($flexdir: row, $jc: space-between, $alit: flex-end);
 
         .hero-img {
@@ -17,22 +24,38 @@ section {
             transition: 200ms;
             display: flex;
             width: 50%;
-            @include all.bigscreen{
+
+            @include all.bigscreen {
                 width: 100%;
                 height: 50%;
             }
-            
-            
+
+            @include all.notebook {
+                background-image: none;
+            }
+
+
 
             &:hover {
                 background-image: url(../../../../public/assets/img/shape2.svg);
             }
 
             img {
-                object-fit: contain ;
+                object-fit: contain;
                 height: 100%;
                 width: 100%;
             }
+            .img-desktop{
+                @include all.notebook{
+                    display: none;
+                }
+            }
+            .img-mobile{
+                @include all.desktop{
+                    display: none;
+                }
+            }
+
         }
 
         .hero-content {
@@ -40,7 +63,8 @@ section {
             width: 50%;
             @include all.fl($jc: space-around);
             padding-bottom: 60px;
-            @include all.bigscreen{
+
+            @include all.bigscreen {
                 width: 100%;
             }
 
@@ -109,7 +133,7 @@ section {
                 }
             }
 
-            .hero-button{
+            .hero-button {
                 @include all.arrowbtn();
                 background-image: url(../../../../public/assets/icons/Arrow_down.png);
 

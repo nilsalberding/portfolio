@@ -37,6 +37,9 @@ h1{
     color: all.$col-blue;
     font-size: clamp(32px, 4dvw, 64px);
     margin-bottom: 64px;
+    @include all.tablet{
+        margin-bottom: 40px;
+    }
 }
 
 .content{

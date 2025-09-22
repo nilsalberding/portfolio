@@ -10,9 +10,18 @@ section {
         width: 100%;
         max-width: 1920px;
         padding: 0 60px;
+        @media(max-width: 900px){
+            padding: 0 30px;
+        }
+        @include all.tablet{
+            padding: 0;
+        }
         .link-active{
             background-color: #2d3840;
             color: all.$col-white;
+            @include all.tablet{
+                color: all.$col-blue;
+            }
         }
         a{
             font-size: clamp(24px, 2dvw, 40px);
@@ -25,6 +34,16 @@ section {
             &:hover{
                 color: all.$col-white;
             }
+            @include all.tablet{
+                padding: 16px 24px;
+                font-size: 20px;
+                color: all.$col-white;
+            }
+            @media(max-width:470px){
+                padding: 16px 8px;
+                font-size: 16px;
+            }
+
         }
     }
 

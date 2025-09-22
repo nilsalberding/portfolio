@@ -1,14 +1,26 @@
+@use '../../../../../public/assets/styles/all-styles.scss' as all;
+
 div{
     display: flex;
     justify-content: center;
     width: 100%;
     background-color:#2d3840 ;
     padding: 40px;
+    @include all.tablet{
+        padding: 16px;
+    }
+
     .content{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         gap: 100px;
+        @media(max-width: 1200px){
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 50px
+        }
 
     }
 }

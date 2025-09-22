@@ -5,14 +5,27 @@
     @include all.fl();
     gap: 40px;
     width: clamp(300px, 50dvw, 800px);
-    @include all.bigscreen{
+
+    @include all.bigscreen {
         width: 1000px;
+    }
+
+    @include all.tablet{
+        display: none;
+    }
+
+    @media(max-width: 1200px) {
+        width: 100%;
     }
 
     .single-desc {
         display: flex;
         align-items: flex-start;
         gap: 24px;
+
+        @media(max-width: 1200px) {
+            width: 100%;
+        }
 
         >div {
             display: flex;
@@ -25,18 +38,99 @@
 
                 span {
                     font-size: clamp(20px, 1.2dvw, 32px);
+
+                    @media(max-width: 1200px) {
+                        display: none;
+                    }
                 }
             }
 
             h3 {
                 font-size: clamp(28px, 1.5dvw, 40px);
                 font-weight: 400;
+
+                @include all.tablet {
+                    font-size: 18px;
+                    color: all.$col-blue;
+                }
             }
 
             p {
                 font-size: all.$p-text;
                 line-height: 1.2;
+
+                @include all.tablet {
+                    font-size: 18px;
+                }
+
+                @include all.mobile {
+                    font-size: 16px;
+                }
             }
+        }
+    }
+
+
+}
+
+.mobile-desc {
+    @include all.fl();
+    gap: 24px;
+    @media(min-width: 768px){
+        display: none;
+    }
+
+    .single-desc {
+        @include all.fl($alit: flex-start);
+        gap: 16px;
+
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+
+            h3 {
+                font-weight: 400;
+                color: all.$col-blue;
+            }
+        }
+
+        p {
+            line-height: 1.2;
+        }
+    }
+        .link-container {
+        display: flex;
+        gap: 32px;
+        margin-top: 24px;
+
+        a {
+            padding: 12px 20px;
+            border-radius: 24px;
+            transition: 300ms;
+        }
+
+        .link-test {
+            background-color: all.$col-blue;
+            color: all.$col-dark;
+
+            &:hover {
+                background-color: all.$col-white;
+            }
+        }
+
+        .link-git {
+            border: solid 1px all.$col-blue;
+            color: all.$col-blue;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+        }
+
+        @media(min-width: 1200px) {
+            display: none;
         }
     }
 }

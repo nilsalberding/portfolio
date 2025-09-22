@@ -1,12 +1,16 @@
 <div class="view-container">
-    <span>Technologies</span>
+    <div class="mobile-container">
+        <h2>{{project.name}}</h2>
+        <span>{{'projects.tech'|translate}}: {{project.tech}}</span>
+        <span>{{'projects.duration'|translate}}: {{project.duration|translate}}</span>
+    </div>
+
+    <span>{{'projects.tech'|translate}}</span>
     <div class="tech-container">
         @for (icon of project.icons; track $index) {
         <img src="assets/icons/{{icon}}" alt="">
         }
 
-        <!-- <img src="assets/icons/css.png" alt="">
-        <img src="assets/icons/javascript.png" alt=""> -->
     </div>
     <img src="{{project.img}}" alt="">
     <div class="link-container">
