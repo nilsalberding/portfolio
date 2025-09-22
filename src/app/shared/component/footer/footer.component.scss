@@ -5,14 +5,41 @@ footer {
     height: 150px;
     @include all.fl();
 
+    @include all.tablet {
+        height: auto;
+        padding: 24px 0;
+    }
+
+
+
     .content {
         @include all.fl($flexdir: row, $jc: space-between);
+
+        @include all.tablet {
+            @include all.fl($flexdir: column-reverse);
+            gap: 24px;
+        }
+
+        @include all.mobile {
+            padding: 8px 0;
+        }
+
         padding: 0 80px;
 
         .legal-notice-container {
             @include all.fl($alit: flex-start);
             gap: 16px;
             color: all.$col-dark;
+
+            @include all.tablet {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            @include all.mobile {
+                @include all.fl();
+            }
 
             a {
                 color: all.$col-dark;
@@ -26,6 +53,7 @@ footer {
         .link-container {
             display: flex;
             gap: 16px;
+
             a {
                 display: inline-block;
                 background-position: center;
@@ -42,6 +70,7 @@ footer {
                     background-image: url(../../../../../public/assets/icons/github4.png);
                 }
             }
+
             #link-mail {
                 background-image: url(../../../../../public/assets/icons/mail3.png);
 
@@ -49,6 +78,7 @@ footer {
                     background-image: url(../../../../../public/assets/icons/mail4.png);
                 }
             }
+
             #link-linkedin {
                 background-image: url(../../../../../public/assets/icons/linkedin3.png);
 
