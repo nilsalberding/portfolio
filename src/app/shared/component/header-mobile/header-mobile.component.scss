@@ -34,8 +34,9 @@ header {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: clamp(300px, 80dvw, 600px);
+        width: clamp(300px, 90dvw, 600px);
         height: 50%;
+        bottom: 10%;
 
         a {
             margin: 16px 24px;
