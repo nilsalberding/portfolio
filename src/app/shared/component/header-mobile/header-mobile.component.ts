@@ -1,21 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { LanguageBtnsService } from '../../../services/language-btns.service';
 
-
 @Component({
-  selector: 'app-header',
+  selector: 'app-header-mobile',
   imports: [TranslatePipe, CommonModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './header-mobile.component.html',
+  styleUrl: './header-mobile.component.scss'
 })
-export class HeaderComponent {
+export class HeaderMobileComponent {
 
   lng = inject(LanguageBtnsService);
 
-  btnEn = true;
-  btnDe = false;
+  burgerMenuOpen = false;
+
 
   private translate = inject(TranslateService);
 
@@ -33,4 +32,11 @@ export class HeaderComponent {
     this.lng.lngBtns.en = true;
   }
 
+  showBurgerMenu(){
+    this.burgerMenuOpen = true;
+  }
+
+  closeBurgerMenu(){
+    this.burgerMenuOpen = false;
+  }
 }

@@ -1,0 +1,16 @@
+<header>
+    <a href="#hero"><img src="assets/img/logo.png" alt="logo"></a>
+    <button id="burger-menu" (click)="showBurgerMenu()"></button>
+</header>
+<div class="overlay d-none" [ngClass]="{'d-flex': burgerMenuOpen}" (click)="closeBurgerMenu()" >
+    <nav>
+        <a href="#about" (click)="closeBurgerMenu()">{{ 'header.whyMe' | translate}}</a>
+        <a href="#skills" (click)="closeBurgerMenu()">Skills</a>
+        <a href="#projects" (click)="closeBurgerMenu()">{{ 'header.projects' | translate}}</a>
+        <a href="#contact" (click)="closeBurgerMenu()">{{ 'header.contact' | translate}}</a>
+        <div>
+            <button [ngClass]="{'active': lng.lngBtns.de}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>
+            <button [ngClass]="{'active': lng.lngBtns.en}" (click)="useLanguage('en')" (click)="setEn()" id="btn-en">EN</button>
+        </div>
+    </nav>
+</div>

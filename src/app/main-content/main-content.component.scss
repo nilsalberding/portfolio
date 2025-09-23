@@ -1,5 +1,21 @@
-app-header{
+@use '../../../public/assets/styles/all-styles.scss' as all;
+
+app-header {
     position: sticky;
     top: 0;
     z-index: 10;
+
+    @include all.tablet {
+        display: none;
+    }
+}
+
+app-header-mobile {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    @media(min-width: 769px) {
+        display: none;
+    }
 }

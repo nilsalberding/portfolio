@@ -8,8 +8,12 @@
             <a href="#contact">{{ 'header.contact' | translate}}</a>
         </nav>
         <div>
-            <button [ngClass]="{'active': btnDe}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>
-            <button [ngClass]="{'active': btnEn}" (click)="useLanguage('en')" (click)="setEn()" id="btn-en">EN</button>
+            <!-- <button [ngClass]="{'active': btnDe}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>
+            <button [ngClass]="{'active': btnEn}" (click)="useLanguage('en')" (click)="setEn()" id="btn-en">EN</button> -->
+            <button [ngClass]="{'active': lng.lngBtns.de}" (click)="useLanguage('de')" (click)="setDe()"
+                id="btn-de">DE</button>
+            <button [ngClass]="{'active': lng.lngBtns.en}" (click)="useLanguage('en')" (click)="setEn()"
+                id="btn-en">EN</button>
         </div>
     </div>
 
