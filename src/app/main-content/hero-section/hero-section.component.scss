@@ -16,6 +16,10 @@ section {
             align-items: center;
         }
 
+        @include all.tablet {
+            flex-direction: column;
+        }
+
         @include all.fl($flexdir: row, $jc: space-between, $alit: flex-end);
 
         .hero-img {
@@ -31,13 +35,23 @@ section {
             }
 
             @include all.notebook {
-                background-image: none;
+                background-image: none;                
+            }
+
+            @include all.tablet {
+                width: auto;
+                height: 50%;
+                margin-bottom: 16px;
             }
 
 
 
             &:hover {
                 background-image: url(../../../../public/assets/img/shape2.svg);
+
+                @include all.notebook {
+                    background-image: none;
+                }
             }
 
             img {
@@ -45,13 +59,15 @@ section {
                 height: 100%;
                 width: 100%;
             }
-            .img-desktop{
-                @include all.notebook{
+
+            .img-desktop {
+                @include all.notebook {
                     display: none;
                 }
             }
-            .img-mobile{
-                @include all.desktop{
+
+            .img-mobile {
+                @include all.desktop {
                     display: none;
                 }
             }
@@ -68,9 +84,18 @@ section {
                 width: 100%;
             }
 
+            @include all.tablet{
+                width: 100%;
+            }
+
+
             .hero-socials {
                 width: 100%;
                 @include all.fl($flexdir: row, $jc: space-between);
+
+                @include all.tablet {
+                    display: none;
+                }
 
                 .hero-icons {
                     @include all.fl();
@@ -123,10 +148,14 @@ section {
                     font-size: clamp(30px, 4.3dvw, 90px);
                     text-align: center;
                     font-weight: 400;
+                    margin-bottom: 16px;
+                    // @include all.mobile{
+                    //     font-size: 24px;
+                    // }
                 }
 
                 h2 {
-                    font-size: clamp(24px, 2.5dvw, 48px);
+                    font-size: clamp(20px, 2.5dvw, 48px);
                     text-align: center;
                     font-family: 'Josefin Sans';
                     font-weight: 400;
