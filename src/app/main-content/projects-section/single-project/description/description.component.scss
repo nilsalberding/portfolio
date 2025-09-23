@@ -76,7 +76,7 @@
 .mobile-desc {
     @include all.fl();
     gap: 24px;
-    @media(min-width: 768px){
+    @media(min-width: 769px){
         display: none;
     }
 
