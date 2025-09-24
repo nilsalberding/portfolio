@@ -28,13 +28,12 @@
             "organized": "Zuerst habe ich die Struktur und das Design der Benutzeroberfläche geplant. Dann habe ich die Inhalte der PokéAPI in Klassen organisiert, um alles übersichtlich und handhabbar zu halten. Schließlich habe ich den Pokédex zum Leben erweckt, indem ich den Code geschrieben habe, der alles zum Funktionieren bringt.",
             "learning": "Durch dieses Projekt habe ich zunächst gelernt, Klassen zu nutzen, um Inhalte zu strukturieren. Außerdem habe ich praktische Erfahrung im Umgang mit REST-APIs anhand der PokéAPI gesammelt."
         },
-        "game":{
+        "game": {
             "duration": "4 Wochen",
             "about": "El Pollo Loco ist ein unterhaltsames Jump'n'Run-Spiel, in dem du in die Rolle von Pepe Pellegrino schlüpfst, der freche Hühner und einen mächtigen Boss bekämpfen muss. Um seine Gegner zu besiegen, kann Pepe geschickt springen und Flaschen werfen - ein simples, aber spaßiges Gameplay.",
             "organized": "Zu Beginn habe ich die notwendigen Klassen geplant und ihre Struktur festgelegt, um eine saubere Grundlage für das Projekt zu schaffen. Anschließend habe ich die Objekte in die Spielwelt integriert und mit den passenden Funktionen ausgestattet - so konnte Schritt für Schritt ein lebendiges Spielerlebnis entstehen.",
             "learning": "Die Entwicklung dieses Spiels hat mir tiefere Einblicke in die objektorientierte Programmierung gegeben und mir gezeigt, wie wichtig sauberes, modulares Arbeiten für eine klare und erweiterbare Code-Struktur ist."
         },
-
         "join": {
             "duration": "5 Wochen",
             "about": "Task-Manager, inspiriert vom Kanban-System, mit dem du Aufgaben erstellen, organisieren und priorisieren kannst - dank Drag-and-Drop-Funktionalität. Weise Benutzern und Kategorien Aufgaben zu, um alles übersichtlich und gut strukturiert zu halten.",
@@ -47,7 +46,6 @@
         "reference1": "Der beste Schüler den ich je hatte. Und dazu sieht er noch so viel besser aus als ich. Einfach nur WOW.",
         "reference2": "Ein Softwareentwickler durch und durch. Diesem jungen, unglaublich gut aussehenden Mann gelingt wirklich alles.",
         "reference3": "Kranker Typ. Gibt es eigentlich etwas, was dieser Mensch nicht kann? Mir fällt auf jeden Fall nichts ein"
-
     },
     "contact": {
         "headline": "Kontakt",
@@ -58,6 +56,10 @@
         "send": "Senden",
         "privacy1": "Ich habe die ",
         "link": "Datenschutzerklärung",
-        "privacy2": " gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bestimmungen zu."
+        "privacy2": " gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bestimmungen zu.",
+        "alertName": "Bitte Namen eintragen!",
+        "alertMail": "Bitte Email-Adresse eintragen!",
+        "alertMessage": "Bitte Nachricht eintragen!",
+        "alertCheckbox": "Bitte zustimmen!"
     }
 }

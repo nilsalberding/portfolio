@@ -56,6 +56,10 @@
         "send": "Send",
         "privacy1": "I've read the ",
         "link": "privacy policy",
-        "privacy2": " and agree to the processing of my data as outlined."
+        "privacy2": " and agree to the processing of my data as outlined.",
+        "alertName": "Pleas enter a name!",
+        "alertMail": "Please enter a valid Email-Adress!",
+        "alertMessage": "Please enter a message!",
+        "alertCheckbox": "Please agree to the privacy policy!"
     }
 }

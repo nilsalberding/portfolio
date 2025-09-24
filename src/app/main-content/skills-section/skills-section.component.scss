@@ -25,22 +25,37 @@ section {
 
             @include all.notebook {
                 width: 80%;
+                gap: 40px;
+            }
+            @include all.tablet {
+                width: 100%;
+                gap: 32px;
             }
 
             .icon {
+                width: 70px;
+                height: 100px;
                 @include all.notebook {
-                    width: 50px;
+                    width: 60px;
+                }
+                @include all.tablet{
+                    height: 40px;
+                    width: 40px;
                 }
 
                 img {
                     @include all.tablet {
+                        height: 50px;
+                    }
+                    @include all.mobile{
                         height: 40px;
                     }
+
                 }
 
                 span {
                     @include all.tablet {
-                        font-size: 16px;
+                        display: none
                     }
                 }
             }

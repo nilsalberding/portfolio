@@ -11,6 +11,9 @@
         <div>
             <button [ngClass]="{'active': lng.lngBtns.de}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>
             <button [ngClass]="{'active': lng.lngBtns.en}" (click)="useLanguage('en')" (click)="setEn()" id="btn-en">EN</button>
+            <!-- TODO:  Ausgewählte Sprache im Local Storage speichern -->
         </div>
     </nav>
 </div>
+<!-- TODO: Anker-Punkte für die Links setzen, damit die Headlines zu sehen sind. 
+    Tipp: leeren Div mit Höhe vom Header als Position:absolute bottom:(Höhe Header) -->
