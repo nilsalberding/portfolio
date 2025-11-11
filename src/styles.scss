@@ -65,6 +65,10 @@ h1{
     display: flex;
 }
 
+.anchor-point{    
+    bottom: all.$header-height;
+}
+
 // #region fonts
 
 /* josefin-sans-300 - latin */
