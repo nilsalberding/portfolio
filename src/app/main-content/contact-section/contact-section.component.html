@@ -15,7 +15,7 @@
                 <div>
                     <label for="name">{{"contact.name"|translate}}</label>
                     <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                        placeholder='{{"contact.name"|translate}}' required>
+                        placeholder='{{"contact.name"|translate}}' (ngModelChange)="saveData()" required>
                     @if (!name.valid && (name.touched || contactForm.submitted)){
                     <span>{{"contact.alertName"|translate}}</span>
                     }
@@ -23,7 +23,7 @@
                 <div>
                     <label for="mail">{{"contact.Email"|translate}}</label>
                     <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="mail" name="mail"
-                        placeholder='{{"contact.Email"|translate}}' required
+                        placeholder='{{"contact.Email"|translate}}' (ngModelChange)="saveData()" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     @if (!mail.valid && (mail.touched || contactForm.submitted)) {
                     <span>{{"contact.alertMail"|translate}}!</span>
@@ -33,7 +33,7 @@
             <div class="form-message">
                 <label for="message">{{"contact.message"|translate}}</label>
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
-                    placeholder='{{"contact.message"|translate}}' required></textarea>
+                    placeholder='{{"contact.message"|translate}}' (ngModelChange)="saveData()" required></textarea>
                 @if (!message.valid && (message.touched || contactForm.submitted)) {
                 <span>{{"contact.alertMessage"|translate}}</span>
                 }
@@ -41,8 +41,8 @@
             <div class="form-submit">
                 <div class="checkbox">
                     <input type="checkbox" #checkPrivacy="ngModel" [(ngModel)]="contactData.privacy" name="privacy"
-                        id="privacy" required>
-                    <label for="privacy" (click)="toggleToastMessage()">{{'contact.privacy1'|translate}} <a
+                        id="privacy" (ngModelChange)="saveData()" required>
+                    <label for="privacy">{{'contact.privacy1'|translate}} <a
                             href="/privacy">{{'contact.link'|translate}}</a>{{'contact.privacy2'|translate}}</label>
                     @if(!checkPrivacy.valid && contactForm.submitted){
                     <span>{{'contact.alertCheckbox' | translate}}</span>

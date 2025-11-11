@@ -44,7 +44,7 @@ export class ContactSectionComponent {
           next: (response) => {
 
             ngForm.resetForm();
-            
+
           },
           error: (error) => {
             console.error(error);
@@ -52,7 +52,7 @@ export class ContactSectionComponent {
           complete: () => {
             this.toggleToastMessage();
           }
-            ,
+          ,
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
@@ -60,11 +60,30 @@ export class ContactSectionComponent {
     }
   }
 
-  toggleToastMessage(){
+  toggleToastMessage() {
     this.toastmessage = !this.toastmessage;
     setTimeout(() => {
       this.toastmessage = !this.toastmessage;
-    },2000)
+    }, 2000)
+  }
+
+  saveData() {
+    sessionStorage.setItem('contactForm', JSON.stringify(this.contactData))
+  }
+
+  ngOnInit() {
+    this.loadFromSessionStorage();
+  }
+
+  loadFromSessionStorage() {
+    const savedItem = sessionStorage.getItem('contactForm');
+    if (savedItem) {
+      const parsed = JSON.parse(savedItem);
+      this.contactData.name = parsed.name;
+      this.contactData.email = parsed.email;
+      this.contactData.message = parsed.message;
+      this.contactData.privacy = parsed.privacy;
+    }
   }
 
 }
