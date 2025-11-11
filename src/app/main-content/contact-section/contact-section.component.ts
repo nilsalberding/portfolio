@@ -1,11 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
+
 @Component({
   selector: 'app-contact-section',
-  imports: [TranslatePipe, FormsModule],
+  imports: [TranslatePipe, FormsModule, CommonModule],
   templateUrl: './contact-section.component.html',
   styleUrl: './contact-section.component.scss'
 })
@@ -16,10 +18,13 @@ export class ContactSectionComponent {
   contactData = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    privacy: false
   };
 
-  mailTest = true;
+  toastmessage = false;
+
+  mailTest = false;
 
   post = {
     endPoint: 'http://alberding-schulz.de/sendMail.php',
@@ -39,16 +44,27 @@ export class ContactSectionComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            this.toggleToastMessage();
+          }
+            ,
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
     }
+  }
+
+  toggleToastMessage(){
+    this.toastmessage = !this.toastmessage;
+    setTimeout(() => {
+      this.toastmessage = !this.toastmessage;
+    },2000)
   }
 
 }

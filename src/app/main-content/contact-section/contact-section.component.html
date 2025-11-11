@@ -4,7 +4,8 @@
         <div>
             <p>{{"contact.paragraph"|translate}}</p>
             <div>
-                <a href="mailto:nilsalberding@web.de"><img src="assets/icons/icon _email_.png" alt=""> E-mail: nilsalberding&#64;web.de</a>
+                <a href="mailto:nilsalberding@web.de"><img src="assets/icons/icon _email_.png" alt=""> E-mail:
+                    nilsalberding&#64;web.de</a>
                 <a href="tel:017632859064"><img src="assets/icons/icon _phone_.png" alt="">Tel: 0176 32859064</a>
 
             </div>
@@ -13,40 +14,51 @@
             <div class="form-contact">
                 <div>
                     <label for="name">{{"contact.name"|translate}}</label>
-                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder='{{"contact.name"|translate}}' required>
-                    @if (!name.valid && name.touched){
-                        <span>{{"contact.alertName"|translate}}</span>
+                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        placeholder='{{"contact.name"|translate}}' required>
+                    @if (!name.valid && (name.touched || contactForm.submitted)){
+                    <span>{{"contact.alertName"|translate}}</span>
                     }
                 </div>
                 <div>
                     <label for="mail">{{"contact.Email"|translate}}</label>
-                    <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="mail" name="mail" placeholder='{{"contact.Email"|translate}}' required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                    @if (!mail.valid && name.touched) {
-                        <span>{{"contact.alertMail"|translate}}!</span>
+                    <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="mail" name="mail"
+                        placeholder='{{"contact.Email"|translate}}' required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    @if (!mail.valid && (mail.touched || contactForm.submitted)) {
+                    <span>{{"contact.alertMail"|translate}}!</span>
                     }
                 </div>
             </div>
             <div class="form-message">
                 <label for="message">{{"contact.message"|translate}}</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder='{{"contact.message"|translate}}' required></textarea>
-                @if (!message.valid && message.touched) {
-                    <span>{{"contact.alertMessage"|translate}}</span>
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
+                    placeholder='{{"contact.message"|translate}}' required></textarea>
+                @if (!message.valid && (message.touched || contactForm.submitted)) {
+                <span>{{"contact.alertMessage"|translate}}</span>
                 }
             </div>
             <div class="form-submit">
                 <div class="checkbox">
-                    <input type="checkbox" name="privacy" id="privacy" required>
-                    <label for="privacy">{{'contact.privacy1'|translate}} <a href="/privacy">{{'contact.link'|translate}}</a>{{'contact.privacy2'|translate}}</label>
+                    <input type="checkbox" #checkPrivacy="ngModel" [(ngModel)]="contactData.privacy" name="privacy"
+                        id="privacy" (click)="showStatus()" required>
+                    <label for="privacy" (click)="toggleToastMessage()">{{'contact.privacy1'|translate}} <a
+                            href="/privacy">{{'contact.link'|translate}}</a>{{'contact.privacy2'|translate}}</label>
+                    @if(!checkPrivacy.valid && contactForm.submitted){
+                    <span>You have to agree the privacy policy</span>
+                    }
                 </div>
-                <!-- TODO: checkbox validieren und alert einfügen -->
-
                 <input class="btn-submit" type="submit" value="Send">
                 <!-- TODO: Feedback nach Absenden der Mail erstellen -->
+
             </div>
 
         </form>
         <a href="#hero"></a>
-
+        <div class="toast-message" [ngStyle]="{'display': toastmessage ? 'flex' : 'none'}">
+            <span>Senden erfolgreich</span>
+        </div>
     </div>
+
 
 </section>

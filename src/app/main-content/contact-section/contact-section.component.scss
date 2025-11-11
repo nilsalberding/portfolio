@@ -86,7 +86,8 @@ section {
                 gap: 16px;
                 margin-bottom: 16px;
                 height: 100px;
-                @include all.tablet{
+
+                @include all.tablet {
                     @include all.fl();
                     height: auto;
                 }
@@ -94,9 +95,10 @@ section {
                 >div {
                     width: 50%;
                     @include all.fl($alit: flex-start);
-                    @include all.tablet{
+
+                    @include all.tablet {
                         width: 100%;
-                        margin-bottom: 16px ;
+                        margin-bottom: 16px;
                     }
                 }
 
@@ -168,14 +170,15 @@ section {
                         top: 150px;
                     }
 
-                    
+
                 }
             }
 
             .form-submit {
                 display: flex;
                 justify-content: space-between;
-                @include all.tablet{
+
+                @include all.tablet {
                     flex-direction: column;
                     align-items: flex-end;
                 }
@@ -196,6 +199,16 @@ section {
 
                         a {
                             color: all.$col-blue;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 18px;
+                        left: 0px;
+
+                        @include all.tablet {
+                            top: 48px;
                         }
                     }
                 }
@@ -238,6 +251,18 @@ section {
                 position: relative;
                 margin-bottom: 48px;
             }
+        }
+        .toast-message{
+            width: 250px;
+            height: 50px;
+            background-color: all.$col-blue;
+            border: 1px solid white;
+            border-radius: 16px;
+            @include all.fl();
+            position: fixed;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation: slideInFromRight 2s forwards;
         }
     }
 }
