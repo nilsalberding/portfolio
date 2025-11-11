@@ -9,8 +9,8 @@
         <a href="#projects" (click)="closeBurgerMenu()">{{ 'header.projects' | translate}}</a>
         <a href="#contact" (click)="closeBurgerMenu()">{{ 'header.contact' | translate}}</a>
         <div>
-            <button [ngClass]="{'active': lng.lngBtns.de}" (click)="useLanguage('de')" (click)="setDe()" id="btn-de">DE</button>
-            <button [ngClass]="{'active': lng.lngBtns.en}" (click)="useLanguage('en')" (click)="setEn()" id="btn-en">EN</button>
+            <button [ngClass]="{'active': lng.lngBtns.de}" (click)="useLanguage('de')"  id="btn-de">DE</button>
+            <button [ngClass]="{'active': lng.lngBtns.en}" (click)="useLanguage('en')" id="btn-en">EN</button>
             <!-- TODO:  Ausgewählte Sprache im Local Storage speichern -->
         </div>
     </nav>
