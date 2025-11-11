@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { CommonModule } from '@angular/common';
 import { ProjectsdataService } from '../../services/projectsdata.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-projects-section',
-  imports: [SingleProjectComponent, CommonModule],
+  imports: [SingleProjectComponent, CommonModule, TranslatePipe],
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.scss'
 })
