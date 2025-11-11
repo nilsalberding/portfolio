@@ -60,6 +60,7 @@
         "alertName": "Bitte Namen eintragen!",
         "alertMail": "Bitte Email-Adresse eintragen!",
         "alertMessage": "Bitte Nachricht eintragen!",
-        "alertCheckbox": "Bitte zustimmen!"
+        "alertCheckbox": "Bitte der Datenschutzerklärung zustimmen!",
+        "toastMessage": "Senden erfolgreich"
     }
 }

@@ -60,6 +60,7 @@
         "alertName": "Pleas enter a name!",
         "alertMail": "Please enter a valid Email-Adress!",
         "alertMessage": "Please enter a message!",
-        "alertCheckbox": "Please agree to the privacy policy!"
+        "alertCheckbox": "Please agree to the privacy policy!",
+        "toastMessage": "Send successfully"
     }
 }

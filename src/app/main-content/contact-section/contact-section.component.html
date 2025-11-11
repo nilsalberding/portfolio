@@ -41,22 +41,20 @@
             <div class="form-submit">
                 <div class="checkbox">
                     <input type="checkbox" #checkPrivacy="ngModel" [(ngModel)]="contactData.privacy" name="privacy"
-                        id="privacy" (click)="showStatus()" required>
+                        id="privacy" required>
                     <label for="privacy" (click)="toggleToastMessage()">{{'contact.privacy1'|translate}} <a
                             href="/privacy">{{'contact.link'|translate}}</a>{{'contact.privacy2'|translate}}</label>
                     @if(!checkPrivacy.valid && contactForm.submitted){
-                    <span>You have to agree the privacy policy</span>
+                    <span>{{'contact.alertCheckbox' | translate}}</span>
                     }
                 </div>
                 <input class="btn-submit" type="submit" value="Send">
-                <!-- TODO: Feedback nach Absenden der Mail erstellen -->
-
             </div>
 
         </form>
         <a href="#hero"></a>
         <div class="toast-message" [ngStyle]="{'display': toastmessage ? 'flex' : 'none'}">
-            <span>Senden erfolgreich</span>
+            <span>{{'contact.toastMessage' |translate}}</span>
         </div>
     </div>
 
