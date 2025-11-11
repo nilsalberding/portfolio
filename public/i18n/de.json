@@ -63,5 +63,22 @@
         "alertMessage": "Bitte Nachricht eintragen!",
         "alertCheckbox": "Bitte der Datenschutzerklärung zustimmen!",
         "toastMessage": "Senden erfolgreich"
+    },
+    "IMPRINT": {
+        "TITLE": "Impressum",
+        "SERVICE_PROVIDER": {
+            "TITLE": "Diensteanbieter",
+            "NAME": "Nils Alberding-Schulz",
+            "ADDRESS": "Walter-Stoecker-Str"
+        },
+        "CONTACT": {
+            "TITLE": "Kontaktmöglichkeiten",
+            "EMAIL_LABEL": "E-Mail-Adresse:",
+            "PHONE_LABEL": "Telefon:"
+        },
+        "SOURCE": {
+            "TITLE": "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken.",
+            "TEXT": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"
+        }
     }
 }

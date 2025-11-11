@@ -63,5 +63,22 @@
         "alertMessage": "Please enter a message!",
         "alertCheckbox": "Please agree to the privacy policy!",
         "toastMessage": "Send successfully"
+    },
+    "IMPRINT": {
+        "TITLE": "Legal Notice",
+        "SERVICE_PROVIDER": {
+            "TITLE": "Service Provider",
+            "NAME": "Nils Alberding-Schulz",
+            "ADDRESS": "Walter-Stoecker-Str"
+        },
+        "CONTACT": {
+            "TITLE": "Contact Information",
+            "EMAIL_LABEL": "Email address:",
+            "PHONE_LABEL": "Phone:"
+        },
+        "SOURCE": {
+            "TITLE": "Legal text by Dr. Schwenke - click for more information.",
+            "TEXT": "Created with the free Privacy Policy Generator by Dr. Thomas Schwenke"
+        }
     }
 }

@@ -1,20 +1,23 @@
 <app-header></app-header>
 <app-header-mobile></app-header-mobile>
 <div class="content">
-    <h1>Impressum</h1>
-    <h2 id="m46">Diensteanbieter</h2>
-    <p>Nils Alberding-Schulz</p>
-    <p>Walter-Stoecker-Str</p>
+    <h1>{{ 'IMPRINT.TITLE' | translate }}</h1>
+    <h2 id="m46">{{ 'IMPRINT.SERVICE_PROVIDER.TITLE' | translate }}</h2>
+    <p>{{ 'IMPRINT.SERVICE_PROVIDER.NAME' | translate }}</p>
+    <p>{{ 'IMPRINT.SERVICE_PROVIDER.ADDRESS' | translate }}</p>
 
-    <h2 id="m56">Kontaktmöglichkeiten</h2>
-    <p>E-Mail-Adresse: <a href="mailto:nilsalberding@web.de">nilsalberding&#64;web.de</a></p>
-    <p>Telefon: 017632859064</p>
+    <h2 id="m56">{{ 'IMPRINT.CONTACT.TITLE' | translate }}</h2>
+    <p>
+        {{ 'IMPRINT.CONTACT.EMAIL_LABEL' | translate }}
+        <a href="mailto:nilsalberding@web.de">nilsalberding"&#64;"web.de</a>
+    </p>
+    <p>{{ 'IMPRINT.CONTACT.PHONE_LABEL' | translate }} 017632859064</p>
 
-    <p class="seal"><a href="https://datenschutz-generator.de/"
-            title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
-            rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
-            Schwenke</a></p>
+    <p class="seal">
+        <a href="https://datenschutz-generator.de/" title="{{ 'IMPRINT.SOURCE.TITLE' | translate }}" target="_blank"
+            rel="noopener noreferrer nofollow">
+            {{ 'IMPRINT.SOURCE.TEXT' | translate }}
+        </a>
+    </p>
 </div>
 
-<!-- TODO: Text Auf Englisch einstellen -->
- <!-- TODO: Größe von der Section so einstellen, dass nicht gescrollt werden kann  -->
