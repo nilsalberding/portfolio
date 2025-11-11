@@ -21,36 +21,23 @@ export class ProjectsSectionComponent {
   newProject = false;
 
   setJoin() {
-
     this.projectsdata.projects[0].open = false;
     this.projectsdata.projects[1].open = false;
     this.projectsdata.projects[2].open = true;
-
-    // this.join = true;
-    // this.game = false;
-    // this.pokedex = false;
-    // this.newProject = false;
   }
-  setGame() {
 
+  setGame() {
     this.projectsdata.projects[0].open = false;
     this.projectsdata.projects[1].open = true;
     this.projectsdata.projects[2].open = false;
-    // this.join = false;
-    // this.game = true;
-    // this.pokedex = false;
-    // this.newProject = false;
   }
-  setPokedex() {
 
+  setPokedex() {
     this.projectsdata.projects[0].open = true;
     this.projectsdata.projects[1].open = false;
     this.projectsdata.projects[2].open = false;
-    // this.join = false;
-    // this.game = false;
-    // this.pokedex = true;
-    // this.newProject = false;
   }
+  
   setNewProject() {
     this.join = false;
     this.game = false;
