@@ -6,7 +6,7 @@ footer {
     @include all.fl();
 
     @include all.tablet {
-        height: auto;
+        height: 260px;
         padding: 24px 0;
     }
 
