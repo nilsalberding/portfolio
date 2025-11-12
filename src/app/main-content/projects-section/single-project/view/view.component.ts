@@ -9,7 +9,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class ViewComponent {
 
-    @Input() project = {
+  @Input() project = {
     name: "Pokedex",
     img: 'assets/img/pokedex.png',
     duration: 'projects.pokedex.duration',
@@ -17,7 +17,9 @@ export class ViewComponent {
     organized: 'projects.pokedex.organized',
     learning: 'projects.pokedex.learning',
     tech: 'HTML, CSS, JavaScript',
-    icons:["html.png","css.png","javascript.png"]
+    icons: ["html.png", "css.png", "javascript.png"],
+    link: "https://nils-alberding-schulz.developerakademie.net/pokedex/",
+    git: "https://github.com/nilsalberding/Pokedex"
   };
 
 }

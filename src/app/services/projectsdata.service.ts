@@ -17,7 +17,9 @@ export class ProjectsdataService {
       learning: 'projects.pokedex.learning',
       icons:["html.png","css.png","javascript.png"],
       tech: 'HTML, CSS, JavaScript',
-      open: true
+      open: true,
+      link: "https://nils-alberding-schulz.developerakademie.net/pokedex/",
+      git: "https://github.com/nilsalberding/Pokedex"
     },
     {
       name: "El Pollo Loco",
@@ -28,7 +30,9 @@ export class ProjectsdataService {
       learning: 'projects.game.learning',
       icons:["html.png","css.png","javascript.png"],
       tech: 'HTML, CSS, JavaScript',
-      open: false
+      open: false,
+      link: "https://nils-alberding-schulz.developerakademie.net/el_pollo_loco/",
+      git: "https://github.com/nilsalberding/El-Pollo-Loco"
     },
     {
       name: "Join",
@@ -39,7 +43,9 @@ export class ProjectsdataService {
       learning: 'projects.join.learning',
       icons:["angular.png","typescript.png","firebase.png"],
       tech: 'Angular, TypeScript, Firebase',
-      open: false
+      open: false,
+      link: "https://nils-alberding-schulz.developerakademie.net/angular-projects/join/signIn",
+      git: "https://github.com/nilsalberding/join"
     }
   ]
 }
