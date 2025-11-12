@@ -180,7 +180,7 @@ section {
 
                 @include all.tablet {
                     flex-direction: column;
-                    align-items: flex-end;
+                    align-items: center;
                 }
 
                 .checkbox {
@@ -204,11 +204,17 @@ section {
 
                     span {
                         position: absolute;
-                        top: 18px;
+                        top: 34px;
                         left: 0px;
 
-                        @include all.tablet {
-                            top: 48px;
+                        @include all.mobile {
+                            top: 58px;
+                        }
+                        @media (max-width: 430px){
+                            top: 78px
+                        }
+                        @media (max-width: 350px){
+                            top: 90px
                         }
                     }
                 }
@@ -221,6 +227,9 @@ section {
 
                     &:hover {
                         background-color: rgba(255, 255, 255, 0.15);
+                    }
+                    @include all.tablet{
+                        margin-top: 20px;
                     }
                 }
 
@@ -250,6 +259,7 @@ section {
             @media(max-width: 850px) {
                 position: relative;
                 margin-bottom: 48px;
+                margin-right: 0;
             }
         }
         .toast-message{
