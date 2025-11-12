@@ -12,17 +12,20 @@ import { ProjectsdataService } from '../../../services/projectsdata.service';
 export class SingleProjectComponent {
 
   projectsdata = inject(ProjectsdataService);
-    @Input() project = {
+  @Input() project = {
     name: "Pokedex",
     img: 'assets/img/pokedex.png',
     duration: 'projects.pokedex.duration',
     about: 'projects.pokedex.about',
     organized: 'projects.pokedex.organized',
     learning: 'projects.pokedex.learning',
+    icons: ["html.png", "css.png", "javascript.png"],
     tech: 'HTML, CSS, JavaScript',
-    icons:["html.png","css.png","javascript.png"]
+    open: true,
+    link: "https://nils-alberding-schulz.developerakademie.net/pokedex/",
+    git: "https://github.com/nilsalberding/Pokedex"
   }
 
-  
+
 
 }
