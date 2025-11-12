@@ -3,6 +3,9 @@
     align-items: center;
     gap: 10px;
     font-size: 2rem;
+    @media(max-width:360px){
+        font-size: 1.6rem;
+    }
     font-weight: 500;
     position: relative;
 
