@@ -1,0 +1,8 @@
+<div class="about-located">
+    <img [src]="phases[currentPhaseIndex].icon" alt="location icon" class="fade-image" [class.deleting]="deleting" />
+
+    <span class="typed-text">
+        {{ displayedText }}
+        <span class="cursor" [class.hidden]="!showCursor">|</span>
+    </span>
+</div>

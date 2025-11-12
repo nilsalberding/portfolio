@@ -1,0 +1,31 @@
+.about-located {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+
+    img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .typed-text {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .cursor {
+        display: inline-block;
+        width: 1ch;
+        color: currentColor;
+        transition: opacity 0.2s;
+
+        &.hidden {
+            opacity: 0;
+        }
+    }
+}

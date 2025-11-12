@@ -6,8 +6,9 @@
     },
     "about": {
         "headline": "Über mich",
-        "locatedBlue": "Ich wohne",
-        "located": "in Rostock..|",
+        "located": "Ich wohne in Rostock...",
+        "remote": "Ich arbeite auch remote...",
+        "relocate": "Ich würde auch umziehen...",
         "text": "Code ist für mich wie ein Baukasten - ich liebe es, Ideen Stück für Stück in etwas Greifbares zu verwandeln. Am meisten Spaß macht mir, Designs und Funktion zu verbinden und so Interfaces zu bauen, die leicht und angenehm wirken. Mit Tools wie Angular oder Tailwind finde ich schnell kreative Lösungen und habe immer das Ziel, moderne und intuitive Nutzererlebnisse zu schaffen.",
         "talk": "Kontakt"
     },
