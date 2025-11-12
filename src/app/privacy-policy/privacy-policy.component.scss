@@ -1,9 +1,13 @@
 @use '../../../public/assets/styles/all-styles.scss' as all;
 
-.content{
+.content {
     background-color: all.$col-dark;
     line-height: 1.2;
-    a{
+    @include all.mobile{
+        padding-left: 24px;
+    }
+
+    a {
         color: all.$col-blue;
     }
 }
@@ -25,5 +29,15 @@ app-header-mobile {
 
     @media(min-width: 769px) {
         display: none;
+    }
+}
+
+.br-mobile {
+    display: none;
+}
+
+@media (max-width: 380px) {
+    .br-mobile {
+        display: block;
     }
 }

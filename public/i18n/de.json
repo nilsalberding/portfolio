@@ -80,5 +80,158 @@
             "TITLE": "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken.",
             "TEXT": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"
         }
+    },
+    "PRIVACY": {
+        "TITLE": "Datenschutz",
+        "TITLE_SUFFIX": "erklärung",
+        "LAST_UPDATED": "Stand: 22. September 2025",
+        "CONTENT_OVERVIEW": {
+            "TITLE": "Inhaltsübersicht"
+        },
+        "RESPONSIBLE": {
+            "ID": "m3",
+            "TITLE": "Verantwortlicher",
+            "ADDRESS": "Nils Alberding-Schulz<br>Walter-Stoecker-Straße 10<br>18069 Rostock",
+            "EMAIL": "E-Mail-Adresse: <a href='mailto:nilsalberding@web.de'>nilsalberding@web.de</a>"
+        },
+        "PROCESSING_OVERVIEW": {
+            "ID": "mOverview",
+            "TITLE": "Übersicht der Verarbeitungen",
+            "INTRO": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+            "DATA_TYPES": {
+                "TITLE": "Arten der verarbeiteten Daten",
+                "BASIC": "Bestandsdaten (z. B. Namen, Adressen).",
+                "CONTACT": "Kontaktdaten (z. B. E-Mail, Telefonnummern).",
+                "CONTENT": "Inhaltsdaten (z. B. Texteingaben, Fotos, Videos).",
+                "USAGE": "Nutzungsdaten (z. B. besuchte Webseiten, Zugriffszeiten, IP-Adressen).",
+                "META": "Meta-, Kommunikations- und Verfahrensdaten (z. B. Logfiles).",
+                "LOGS": "Protokolldaten (z. B. Serverlogs, Fehlerprotokolle)."
+            },
+            "PERSONS": {
+                "TITLE": "Kategorien betroffener Personen",
+                "COMMUNICATION_PARTNERS": "Kommunikationspartner.",
+                "USERS": "Nutzer (z. B. Besucher der Website, Interessenten)."
+            },
+            "PURPOSES": {
+                "TITLE": "Zwecke der Verarbeitung",
+                "COMMUNICATION": "Kommunikation mit Betroffenen.",
+                "SECURITY": "Sicherheitsmaßnahmen und Fehleranalyse.",
+                "ADMIN": "Organisations- und Verwaltungsverfahren.",
+                "FEEDBACK": "Feedbackverwaltung und Anfragenbearbeitung.",
+                "SERVICE": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.",
+                "INFRASTRUCTURE": "Informationstechnische Infrastruktur (z. B. Webhosting)."
+            }
+        },
+        "LEGAL_BASES": {
+            "ID": "m13",
+            "TITLE": "Maßgebliche Rechtsgrundlagen",
+            "INTRO": "Im Folgenden teilen wir die Rechtsgrundlagen der Datenschutzgrundverordnung (DSGVO) mit, auf deren Basis wir personenbezogene Daten verarbeiten.",
+            "CONSENT": {
+                "TITLE": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO)",
+                "TEXT": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen bestimmten Zweck oder mehrere bestimmte Zwecke gegeben."
+            },
+            "CONTRACT": {
+                "TITLE": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b DSGVO)",
+                "TEXT": "Die Verarbeitung ist für die Erfüllung eines Vertrags erforderlich, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen, die auf Anfrage der betroffenen Person erfolgen."
+            },
+            "LEGAL_OBLIGATION": {
+                "TITLE": "Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c DSGVO)",
+                "TEXT": "Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung erforderlich, der der Verantwortliche unterliegt."
+            },
+            "LEGITIMATE_INTERESTS": {
+                "TITLE": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f DSGVO)",
+                "TEXT": "Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten erforderlich, sofern nicht die Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person überwiegen."
+            },
+            "PROTECTION_INTERESTS": {
+                "TITLE": "Schutz lebenswichtiger Interessen (Art. 6 Abs. 1 S. 1 lit. d DSGVO)",
+                "TEXT": "Die Verarbeitung ist erforderlich, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen."
+            },
+            "NOTICE": "Zusätzlich zu den Bestimmungen der DSGVO können nationale Datenschutzvorschriften gelten."
+        },
+        "SECURITY": {
+            "ID": "m27",
+            "TITLE": "Sicherheitsmaßnahmen",
+            "INTRO": "Wir treffen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten, im Einklang mit den gesetzlichen Anforderungen.",
+            "MEASURES": {
+                "ACCESS_CONTROL": "Zugangskontrolle: Nur befugte Personen erhalten Zugriff auf personenbezogene Daten.",
+                "ENCRYPTION": "Verschlüsselung: Einsatz von TLS/SSL und anderen Verschlüsselungsverfahren zum Schutz der Datenübertragung.",
+                "BACKUP": "Datensicherung: Regelmäßige Backups zur Vermeidung von Datenverlust.",
+                "UPDATES": "System- und Softwareaktualisierungen: Laufende Updates zur Schließung von Sicherheitslücken.",
+                "AWARENESS": "Sensibilisierung: Schulung von Mitarbeitenden in Datenschutz und Informationssicherheit."
+            },
+            "TLS": "Unser Online-Angebot nutzt TLS-Verschlüsselung (erkennbar an „https://“ in der Adresszeile), um die Übertragung vertraulicher Inhalte zu schützen."
+        },
+        "DATA_TRANSFER": {
+            "ID": "m25",
+            "TITLE": "Übermittlung von personenbezogenen Daten",
+            "INTRO": "Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass Daten an andere Stellen, Unternehmen oder Personen übermittelt oder ihnen offengelegt werden.",
+            "PROCESSORS": "Eine Übermittlung kann an Auftragsverarbeiter oder Dritte erfolgen, soweit dies gesetzlich erlaubt ist.",
+            "LEGAL_REQUIREMENTS": "Datenübermittlungen können zur Erfüllung rechtlicher Verpflichtungen oder behördlicher Anordnungen erfolgen.",
+            "CONSENT": "Erfolgt eine Übermittlung auf Grundlage einer Einwilligung, geschieht dies nur im Rahmen des angegebenen Zwecks.",
+            "LEGITIMATE_INTERESTS": "Erfolgt eine Übermittlung auf Grundlage berechtigter Interessen, informieren wir hierüber im Rahmen dieser Datenschutzerklärung."
+        },
+        "INTL_TRANSFER": {
+            "ID": "m24",
+            "TITLE": "Datenverarbeitung in Drittländern",
+            "INTRO": "Eine Übermittlung personenbezogener Daten in ein Drittland (außerhalb der EU bzw. des EWR) erfolgt nur im Einklang mit den gesetzlichen Vorgaben.",
+            "ADEQUACY": "Die Übermittlung erfolgt auf Grundlage eines Angemessenheitsbeschlusses der Europäischen Kommission.",
+            "STANDARD_CLAUSES": "Sofern kein solcher Beschluss besteht, erfolgt die Übermittlung auf Basis von Standardvertragsklauseln oder vergleichbaren Garantien.",
+            "EXCEPTIONS": "In Ausnahmefällen kann eine Übermittlung auf Grundlage der Einwilligung der betroffenen Person oder zur Erfüllung vertraglicher Pflichten erfolgen.",
+            "NOTICE": "Betroffene Personen werden über die jeweiligen Grundlagen und Garantien der Drittlandübermittlung informiert."
+        },
+        "STORAGE_DELETION": {
+            "ID": "m12",
+            "TITLE": "Speicherdauer und Löschung von Daten",
+            "INTRO": "Wir verarbeiten und speichern personenbezogene Daten nur so lange, wie es für die Erfüllung der jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.",
+            "PURPOSE": "Nach Wegfall des Verarbeitungszwecks oder Ablauf gesetzlicher Aufbewahrungsfristen werden die Daten gelöscht oder in ihrer Verarbeitung eingeschränkt.",
+            "LEGAL_OBLIGATIONS": "Eine längere Speicherung kann erfolgen, wenn dies gesetzlich vorgeschrieben ist, z. B. steuer- oder handelsrechtliche Aufbewahrungspflichten.",
+            "USER_REQUEST": "Nutzer können eine Löschung verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+            "LOGS": "Server-Logdaten werden in der Regel für Sicherheitszwecke vorübergehend gespeichert und anschließend gelöscht oder anonymisiert.",
+            "ADDITIONAL_INFO": "Weitere Informationen zu Speicherfristen ergeben sich aus den einzelnen Verarbeitungshinweisen dieser Datenschutzerklärung."
+        },
+        "RIGHTS": {
+            "ID": "m10",
+            "TITLE": "Rechte der betroffenen Personen",
+            "INTRO": "Betroffenen Personen stehen gemäß der DSGVO verschiedene Rechte zu, die insbesondere in den Artikeln 15 bis 21 DSGVO geregelt sind:",
+            "OBJECTION": "Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten Widerspruch einzulegen.",
+            "WITHDRAWAL": "Widerrufsrecht: Sie haben das Recht, erteilte Einwilligungen jederzeit mit Wirkung für die Zukunft zu widerrufen.",
+            "ACCESS": "Auskunftsrecht: Sie haben das Recht, Auskunft darüber zu verlangen, ob personenbezogene Daten verarbeitet werden, sowie Einsicht in diese Daten zu erhalten.",
+            "RECTIFICATION": "Recht auf Berichtigung: Sie haben das Recht, die Vervollständigung oder Berichtigung unrichtiger Daten zu verlangen.",
+            "ERASURE": "Recht auf Löschung: Sie haben das Recht, die Löschung personenbezogener Daten zu verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+            "PORTABILITY": "Recht auf Datenübertragbarkeit: Sie haben das Recht, die Sie betreffenden Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder an einen anderen Verantwortlichen übertragen zu lassen.",
+            "COMPLAINT": "Beschwerderecht: Sie haben das Recht, sich bei einer Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen Datenschutzrecht verstößt."
+        },
+        "WEBHOSTING": {
+            "ID": "m225",
+            "TITLE": "Bereitstellung des Onlineangebots und Webhosting",
+            "INTRO": "Wir verarbeiten die Daten der Nutzer, um ihnen unser Onlineangebot bereitstellen zu können. Dazu gehört die Verarbeitung der IP-Adresse, um Inhalte an das Endgerät zu übermitteln.",
+            "DATA_TYPES": "Verarbeitete Datenarten: Nutzungsdaten (z. B. Seitenaufrufe, Klickpfade, Verweildauer); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern).",
+            "AFFECTED": "Betroffene Personen: Nutzer (z. B. Webseitenbesucher, Nutzer von Online-Diensten).",
+            "PURPOSES": "Zwecke der Verarbeitung: Bereitstellung des Onlineangebots, Nutzerfreundlichkeit, IT-Sicherheit und technische Infrastruktur.",
+            "RETENTION": "Aufbewahrung und Löschung: Die Löschung erfolgt gemäß den Angaben im Abschnitt 'Speicherdauer und Löschung'.",
+            "LEGAL_BASIS": "Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 lit. f) DSGVO).",
+            "ADDITIONAL_TITLE": "Weitere Hinweise zu Verarbeitungsprozessen:",
+            "ACCESS_LOGS": "Erhebung von Zugriffsdaten und Logfiles: Der Zugriff auf unser Onlineangebot wird in sogenannten Server-Logfiles protokolliert. Diese enthalten z. B. abgerufene Seiten, Zeitpunkte, übertragene Datenmengen, Browsertyp und IP-Adresse. Die Speicherung erfolgt für Sicherheits- und Stabilitätszwecke und wird nach maximal 30 Tagen gelöscht oder anonymisiert."
+        },
+        "COOKIES": {
+            "ID": "m134",
+            "TITLE": "Einsatz von Cookies und vergleichbaren Technologien",
+            "INTRO": "Wir setzen Cookies und ähnliche Technologien ein, um die Funktionsfähigkeit unserer Website sicherzustellen, statistische Analysen durchzuführen und Marketingmaßnahmen zu unterstützen.",
+            "TYPES": "Arten der verarbeiteten Daten: Nutzungsdaten (z. B. aufgerufene Seiten, Interaktionszeiten), Geräteinformationen (z. B. Browsertyp, Betriebssystem).",
+            "ESSENTIAL": "Notwendige Cookies: Diese sind erforderlich, um die grundlegende Funktionalität der Website zu gewährleisten (z. B. Sitzungsverwaltung, Sicherheit).",
+            "FUNCTIONAL": "Funktionale Cookies: Dienen der Verbesserung von Nutzererfahrung und Komfort (z. B. Sprachauswahl, Speicherung von Einstellungen).",
+            "STATISTICS": "Statistik-Cookies: Erfassen anonymisierte Daten zur Nutzung der Website, um die Inhalte und Funktionen zu optimieren.",
+            "MARKETING": "Marketing- und Tracking-Cookies: Werden eingesetzt, um das Verhalten von Nutzern über mehrere Websites hinweg zu analysieren und personalisierte Werbung anzuzeigen.",
+            "MANAGEMENT": "Cookie-Verwaltung: Nutzer können über die Cookie-Einstellungen ihrer Browser oder ein Consent-Tool festlegen, welche Cookies sie zulassen oder ablehnen."
+        },
+        "CONTACT": {
+            "ID": "m182",
+            "TITLE": "Kontakt- und Anfragenverwaltung",
+            "INTRO": "Bei der Kontaktaufnahme mit uns (z. B. per E-Mail, Telefon oder Kontaktformular) werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Anfrage erforderlich ist.",
+            "DATA_TYPES": "Verarbeitete Datenarten: Bestandsdaten (z. B. Name, Kontaktdaten), Inhaltsdaten (z. B. Nachrichtentexte), Kommunikationsdaten (z. B. IP-Adresse, Zeitstempel).",
+            "PURPOSES": "Zwecke der Verarbeitung: Beantwortung von Kontaktanfragen, Kommunikation und Verwaltung von Anfragen.",
+            "RETENTION": "Aufbewahrung und Löschung: Die Daten werden gelöscht, sobald sie zur Erfüllung der Anfrage nicht mehr erforderlich sind oder gesetzliche Aufbewahrungspflichten abgelaufen sind.",
+            "LEGAL_BASIS": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung oder vorvertragliche Maßnahmen), Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation)."
+        }
     }
 }
