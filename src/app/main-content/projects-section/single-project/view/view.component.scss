@@ -4,17 +4,19 @@
     @include all.fl();
     width: 400px;
     gap: 16px;
-    
-    @include all.bigscreen{
+
+    @include all.bigscreen {
         width: 600px;
     }
 
-    @media(max-width: 1200px){
+    @media(max-width: 1200px) {
         width: 100%;
     }
-    >span{
+
+    >span {
         font-size: clamp(16px, 0.8dvw, 28px);
-        @media(max-width: 1200px){
+
+        @media(max-width: 1200px) {
             display: none;
         }
     }
@@ -22,16 +24,17 @@
     >img {
 
         width: clamp(300px, 30dvw, 600px);
-        height: clamp(180px, 18dvw, 360px );
+        height: clamp(180px, 18dvw, 360px);
         object-fit: cover;
         object-position: center;
         border-radius: 24px;
     }
 
     .tech-container {
-        @media(max-width: 1200px){
+        @media(max-width: 1200px) {
             display: none;
         }
+
         display: flex;
         gap: 32px;
 
@@ -45,42 +48,50 @@
         display: flex;
         gap: 32px;
         margin-top: 24px;
+        @include all.tablet{
+            display: none;
+        }
+
         a {
-            padding: 12px 20px;            
+            padding: 12px 20px;
             border-radius: 24px;
             transition: 300ms;
         }
-        .link-test{
+
+        .link-test {
             background-color: all.$col-blue;
             color: all.$col-dark;
-            &:hover{
+
+            &:hover {
                 background-color: all.$col-white;
             }
         }
-        .link-git{
+
+        .link-git {
             border: solid 1px all.$col-blue;
             color: all.$col-blue;
-            &:hover{
+
+            &:hover {
                 background-color: rgba(255, 255, 255, 0.15);
             }
         }
-        @media(max-width: 1200px){
-            display: none;
-        }
+
     }
 
-    .mobile-container{
+    .mobile-container {
         width: 100%;
         @include all.fl($alit: flex-start);
         gap: 8px;
-        @media(min-width: 1200px){
+
+        @media(min-width: 1200px) {
             display: none;
         }
-        h2{
+
+        h2 {
             color: all.$col-blue;
             font-weight: 400;
             margin-bottom: 8px;
         }
     }
-
 }
+
