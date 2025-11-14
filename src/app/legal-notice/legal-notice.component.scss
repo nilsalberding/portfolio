@@ -1,9 +1,15 @@
 @use '../../../public/assets/styles/all-styles.scss' as all;
 
+section{
+    width: 100%;
+    background-color: all.$col-dark;
+}
+
 .content{
     background-color: all.$col-dark;
     line-height: 1.2;
     height: calc(100dvh - all.$header-height - 150px);
+    
     @include all.tablet{
         height: calc(100dvh - 360px);
         padding: 16px;    

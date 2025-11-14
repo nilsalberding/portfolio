@@ -1,10 +1,20 @@
 @use '../../../public/assets/styles/all-styles.scss' as all;
 
+section{
+    width: 100%;
+    background-color: all.$col-dark;
+}
+
 .content {
     background-color: all.$col-dark;
     line-height: 1.2;
+    padding-bottom: 24px;
     @include all.mobile{
         padding-left: 24px;
+    }
+    h1{ 
+        display: flex;
+        flex-wrap: wrap;
     }
 
     a {
