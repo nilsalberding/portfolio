@@ -18,7 +18,7 @@ export class ProjectsdataService {
       icons:["html.png","css.png","javascript.png"],
       tech: 'HTML, CSS, JavaScript',
       open: true,
-      link: "http://pokedex.alberding-schulz.de/",
+      link: "https://pokedex.alberding-schulz.de/",
       git: "https://github.com/nilsalberding/Pokedex"
     },
     {
@@ -31,7 +31,7 @@ export class ProjectsdataService {
       icons:["html.png","css.png","javascript.png"],
       tech: 'HTML, CSS, JavaScript',
       open: false,
-      link: "http://elpolloloco.alberding-schulz.de/",
+      link: "https://elpolloloco.alberding-schulz.de/",
       git: "https://github.com/nilsalberding/El-Pollo-Loco"
     },
     {
@@ -44,7 +44,7 @@ export class ProjectsdataService {
       icons:["angular.png","typescript.png","firebase.png"],
       tech: 'Angular, TypeScript, Firebase',
       open: false,
-      link: "http://join.alberding-schulz.de/",
+      link: "https://join.alberding-schulz.de/",
       git: "https://github.com/nilsalberding/join"
     }
   ]
