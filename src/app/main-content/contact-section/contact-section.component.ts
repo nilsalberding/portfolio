@@ -27,7 +27,7 @@ export class ContactSectionComponent {
   mailTest = false;
 
   post = {
-    endPoint: 'http://alberding-schulz.de/sendMail.php',
+    endPoint: 'https://alberding-schulz.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
