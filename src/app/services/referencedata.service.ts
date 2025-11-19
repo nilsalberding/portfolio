@@ -9,18 +9,18 @@ export class ReferencedataService {
 
   references = [
     {
-      name: "Nico Dunkler",
-      project: "El Pollo Loco",
+      name: "Henry Wolf",
+      project: "Join",
       text: "team.reference1"
     },
     {
-      name: "Marcel Heftmann",
+      name: "Marcel Buchmann",
       project: "Join",
       text: "team.reference2"
     },
     {
-      name: "Marcus Gähne",
-      project: "Pokedex",
+      name: "Felicia Tretter",
+      project: "Join",
       text: "team.reference3"
     },
 
